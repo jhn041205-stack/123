@@ -1,0 +1,26 @@
+<launch>
+  <arg name="control_config" default="$(find articulated_control)/config/real_vehicle_host.yaml" />
+  <arg name="comm_config" default="$(find standard_robot_pp_ros1)/config/real_vehicle_comm.yaml" />
+  <arg name="use_real_serial" default="true" />
+
+  <rosparam command="load" file="$(arg control_config)" />
+  <rosparam command="load" file="$(arg comm_config)" />
+
+  <node pkg="articulated_control"
+        type="real_vehicle_central_controller.py"
+        name="real_vehicle_central_controller"
+        output="screen">
+    <param name="param_yaml" value="$(arg control_config)" />
+  </node>
+
+  <node if="$(arg use_real_serial)"
+        pkg="standard_robot_pp_ros1"
+        type="standard_robot_pp_ros1_node"
+        name="standard_robot_pp_ros1"
+        output="screen" />
+
+  <node pkg="standard_robot_pp_ros1"
+        type="fleet_udp_bridge_node.py"
+        name="fleet_udp_bridge_node"
+        output="screen" />
+</launch>

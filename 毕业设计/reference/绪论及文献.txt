@@ -1,0 +1,175 @@
+下面内容可直接替换你现有的**第1章绪论**。我按照你已完成稿件的题目、摘要、目录和第2—4章技术路线来补写：你的论文主线是“单体轮足建模—LQR平衡控制—链式运动学约束—DMPC协同控制—LQR-ADRC鲁棒补偿”，因此绪论也围绕这一主线展开。 参考文献条目我按机器人、模块化自重构、轮足机器人、多机器人协同、MPC/DMPC、LQR/ADRC几个方向整理，代表性来源可在公开数据库中核对，如模块化自重构机器人综述与PolyBot/M-TRAN文献、轮足机器人综述与ANYmal/Ascento相关工作、分布式MPC与ADRC基础文献等。([Fab Central][1])
+
+---
+
+# 第1章 绪论
+
+## 1.1 研究背景与意义
+
+移动机器人是机器人学、自动控制、机械电子工程和人工智能等学科交叉发展的重要研究方向，在复杂环境探测、灾害救援、军事侦察、工业巡检、协同运输和特种作业等领域具有广泛应用价值。传统移动机器人按照运动机构形式通常可分为轮式、履带式和腿式等类型。轮式机器人结构简单、运动效率高、控制实现相对容易，适合在结构化或半结构化道路环境中快速移动；履带式机器人具有较强的地形适应能力和越障能力，但能耗、转向阻力和机构磨损相对较大；腿式机器人能够通过离散支撑点适应复杂地形，具备较好的跨越障碍和姿态调节能力，但系统自由度多、动力学模型复杂、控制难度和能量消耗较高[1-2]。因此，如何在移动效率、复杂地形适应能力、系统稳定性和控制实现复杂度之间取得平衡，是移动机器人平台设计与控制研究中的重要问题。
+
+轮足机器人通过在腿式机构末端引入轮式驱动，将轮式运动的高效率与腿式机构的姿态调节能力相结合。与纯轮式平台相比，轮足机器人能够通过腿长变化、机体姿态调节和支撑位置调整适应台阶、坡面、坑洼、松软地面等非结构化环境；与纯腿式平台相比，其在平坦或连续地面上可利用轮式滚动实现更高速度和更低能耗的运动。因此，轮足复合移动方式被认为是兼顾机动性、通过性和工程可实现性的重要技术路径[13-18]。近年来，轮足机器人在结构设计、运动规划、全身控制、模型预测控制和强化学习控制等方面取得了较快发展，典型平台如Roller-Walker、Wheel Transformer、Ascento以及带轮足式四足平台等，均体现了轮腿复合机构在多地形移动任务中的应用潜力[13-18]。
+
+自重组机器人则强调机器人系统能够根据任务需求、环境条件或故障状态改变自身结构形态。模块化自重构机器人通常由多个具有感知、计算、驱动和连接能力的模块组成，通过标准化机械接口和分布式控制方式实现模块间组合、分离和重构[3-12]。与固定构型机器人相比，自重构机器人具有更高的结构柔性、任务适应性和系统冗余性。在复杂环境中，单个机器人往往受到尺寸、功率、支撑能力和感知范围限制，而多个模块通过机械连接形成整体后，可扩展支撑范围、增强负载能力，并通过构型变化适应不同任务需求。因此，将轮足移动能力与模块化自重构能力相结合，有望构建一种兼具高效移动、姿态调节、构型重组和协同作业能力的新型移动机器人系统。
+
+本文研究的对象为链式自重组轮足机器人系统。该系统由多个具备独立平衡移动能力的轮足机器人单体通过铰接机构串联组成。单体层面上，机器人具有轮式倒立摆特性和腿部可变构型特性，控制器需要同时处理机体俯仰稳定、腿长调节、速度跟踪和尾部辅助机构等问题；链式系统层面上，相邻单体之间存在铰接几何约束和速度传递关系，任一单体的运动都会对相邻单体产生影响，系统整体表现出明显的非完整约束、强耦合和多体协同特征。与常规多机器人队形控制不同，链式系统中的各单体并非仅通过通信或相对位姿保持形成队形，而是通过物理铰接结构构成一个受约束的多体系统，这使得其运动协调问题更加接近“受约束多机器人系统”与“铰接车辆系统”的结合。
+
+链式自重组轮足机器人在复杂地形通过、狭窄空间穿越、协同运输和多模块任务扩展等场景中具有潜在应用价值。例如，在沙地、碎石地、楼梯、沟壑或障碍密集环境中，链式构型能够通过多个单体的支撑分布提高整体稳定性；在载荷运输任务中，多个单体可通过机械连接共同承担负载；在特殊环境探测中，系统可根据通道形状或任务需求改变链式姿态和运动方式。上述应用对系统的建模与控制提出了新的要求：一方面，需要建立能够描述单体轮足机构、尾部辅助机构和欠驱动平衡特性的动力学模型；另一方面，需要建立能够反映相邻单体铰接约束、速度传播关系和链式构型变化规律的协同运动模型。
+
+因此，开展链式自重组轮足机器人协同控制研究具有以下意义。第一，从理论层面看，该问题融合了轮足机器人平衡控制、非完整系统建模、多体约束动力学和多机器人协同控制等内容，有助于深化对变构型轮足系统运动机理的理解。第二，从方法层面看，将单体稳定控制与链式协同控制分层处理，有助于降低高维强耦合系统的控制复杂度，并为分布式模型预测控制、鲁棒扰动补偿等方法在链式机器人系统中的应用提供基础。第三，从工程层面看，建立可实时实现的单体控制器和链式期望运动生成方法，有助于推动自重组轮足机器人由单体平衡实验向多体协同运动和复杂场景应用发展。
+
+## 1.2 国内外研究现状
+
+### 1.2.1 自重组轮足机器人研究现状
+
+自重构机器人研究最早可追溯到可动态重构机械系统和模块化机器人系统。Fukuda等提出的CEBOT系统较早体现了机器人模块通过连接组合形成不同功能结构的思想[3]。Chirikjian等针对metamorphic robot开展了构型运动学分析，为模块化机器人构型描述和重构运动奠定了理论基础[4]。随后，PolyBot、CONRO、M-TRAN、SuperBot等系统相继提出，推动了模块化自重构机器人从概念验证向实际机构、通信接口、重构控制和多模态运动方向发展[5-10]。Yim等系统总结了模块化自重构机器人在可重构性、鲁棒性和多任务适应性方面的优势，同时指出模块连接机构设计、构型识别、重构规划和分布式控制仍是该领域的重要挑战[8]。Murata和Kurokawa从自重构机器人系统结构、运动方式和应用场景等方面进行了综述，指出模块化机器人可通过改变连接关系实现结构和功能的动态适应[9]。
+
+从构型特征看，自重构机器人通常可分为链式、晶格式和混合式等类型。链式结构模块通过串联连接形成蛇形、环形、腿式或多臂结构，具有较强的构型表达能力和运动灵活性；晶格式结构模块通常在规则空间网格中移动和重排，便于形成稳定三维结构；混合式结构则兼具链式和晶格式特点[8-12]。本文所研究的链式自重组轮足机器人属于具有主动移动能力的链式连接系统，其特点在于每个模块本身并非被动连接单元，而是具有独立平衡移动能力的轮足机器人单体。因此，该系统既不同于传统模块化自重构机器人中以重构规划为核心的问题，也不同于普通多机器人系统中各机器人相互独立运动的队形控制问题，而是需要同时考虑“单体平衡稳定”和“链式几何约束”。
+
+轮足机器人方面，早期Roller-Walker采用腿端被动轮实现轮式与腿式运动模式切换，验证了腿轮复合机构在能量效率和地形适应性方面的优势[13]。Kim等提出Wheel Transformer，通过可变形轮结构在平地滚动和越障运动之间切换，提高了小型移动平台对障碍环境的适应能力[14]。Ascento采用两轮平衡加腿部跳跃结构，在保持平地快速移动能力的同时具备一定跳跃越障能力[15]。近年来，带轮足式四足机器人进一步将轮式滚动约束与腿式全身控制结合，通过模型预测控制、接触规划和全身动力学优化实现高速、灵活的多地形运动[16-18]。这些研究表明，轮足机器人能够有效结合轮式和腿式运动优势，但同时也带来了机构自由度增加、动力学耦合增强和控制器实时性要求提高等问题。
+
+在单体控制方法方面，轮足平衡机器人常可抽象为轮式倒立摆或带可变腿长的欠驱动系统。针对该类系统，常见控制方法包括PID控制、线性二次型调节器、滑模控制、虚拟模型控制、模型预测控制和全身动力学控制等。Raibert关于动态平衡腿式机器人的研究为足式机器人运动控制提供了重要思想[19]；Pratt等提出的虚拟模型控制方法通过构造虚拟弹簧、阻尼和力元件，将高层期望力映射到底层关节力矩，具有直观性和工程可实现性[20]；LQR方法则可在系统平衡点附近根据线性化模型构造状态反馈控制律，兼顾状态调节性能和输入能量约束[22-23]。对于本文所研究的单体轮足机器人，腿长变化、尾部辅助机构接触状态变化和地面扰动会导致模型参数发生变化，单一固定增益控制器难以覆盖全部运动工况。因此，结合参数化增益拟合和鲁棒扰动补偿的控制设计具有实际意义。
+
+综上，现有自重构机器人研究主要关注模块机构、重构规划和分布式构型控制，现有轮足机器人研究主要关注单体机构设计、动态运动和复杂地形适应能力，而将多个具备平衡移动能力的轮足单体通过铰接结构组成链式系统后的协同控制问题仍有进一步研究空间。该问题的关键不只是让每个单体保持稳定运动，还需要保证相邻单体在铰接点处满足位置和速度一致性，从而避免链式构型误差累积和运动约束冲突。
+
+### 1.2.2 多机器人协同控制研究现状
+
+多机器人协同控制是多智能体系统和移动机器人领域的重要研究方向，其核心目标是通过信息交互和控制协调，使多个机器人在完成个体任务的同时实现群体层面的期望行为。常见研究内容包括一致性控制、领航-跟随控制、队形控制、协同路径规划、任务分配和分布式优化等[28-33]。Ren等对多车辆协同控制中的信息一致性问题进行了系统总结，指出局部信息交互是实现多机器人群体协同的重要基础[28]。Olfati-Saber等从图论和网络系统角度建立了多智能体一致性与协同控制理论框架，为分析网络拓扑、通信延迟和信息流方向对协同行为的影响提供了理论工具[29]。在移动机器人队形控制中，常用方法包括行为法、虚拟结构法、领航-跟随法和基于图论的一致性控制法等[31-33]。
+
+然而，链式自重组轮足机器人与一般多机器人队形系统存在显著差异。一般多机器人系统中，机器人之间多通过通信、视觉或相对定位保持队形，个体之间通常不存在刚性机械连接；而链式系统中，相邻单体通过铰接机构连接，系统必须满足铰接点位置一致和速度一致约束。该类约束使得后车运动不再是独立规划问题，而是受到前车速度、航向角、铰接角和几何参数的共同影响。这与非完整移动机器人和铰接车辆系统中的运动约束问题具有一定相似性[24-27]。Murray和Sastry针对非完整系统运动规划提出了基于正弦输入的转向方法[24]；Campion等对轮式移动机器人的运动学和动力学模型进行了分类，为差速、独轮车和车式移动平台建模提供了基础[25]；Laumond等围绕车式机器人和带拖车系统的运动规划进行了系统研究[26-27]。这些研究为链式机器人系统的运动学约束建模提供了重要参考。
+
+模型预测控制由于能够显式处理系统约束、多变量耦合和有限时域优化问题，近年来被广泛应用于移动机器人、车辆系统和多机器人协同控制中[34-39]。MPC通过在每个采样时刻求解有限时域优化问题，并仅执行当前时刻最优控制输入，能够根据最新状态滚动修正未来控制序列。对于链式轮足系统而言，MPC的优势在于可以在预测时域内同时考虑速度跟踪误差、铰接角约束、输入幅值约束和输入变化率约束，从而提高链式构型保持能力和运动平滑性。Rawlings等和Camacho等对MPC理论、约束处理和工程实现进行了系统阐述[34-35]；Mayne等从稳定性和最优性角度讨论了约束MPC的基本理论问题[36]。
+
+随着机器人数量增加，集中式MPC会面临优化变量维度高、求解时间长和通信负担重等问题。分布式模型预测控制通过将全局优化问题分解为多个局部优化问题，使每个机器人仅基于自身和邻近机器人的状态进行滚动优化，从而提高系统可扩展性和实时性[37-39]。Dunbar和Murray将分布式滚动时域控制应用于多车辆队形稳定问题，证明了在一定条件下系统可稳定到目标邻域[37]。Christofides等对分布式MPC方法进行了教程式综述，分析了非合作、合作和分层分布式MPC的特点及适用场景[38]。Farina等则研究了非合作分布式预测控制算法，为局部优化与全局性能之间的关系提供了参考[39]。对于本文研究的链式系统，铰接约束天然具有局部相邻耦合特点，因此采用分布式MPC协调相邻单体的预测轨迹和控制输入具有较强合理性。
+
+除协同层的预测控制外，单体层面的鲁棒性同样是链式系统稳定运行的关键。轮足机器人在实际运动中会受到地面摩擦变化、机体参数不确定性、轮地接触扰动、铰接传递力以及尾部辅助机构状态切换等影响。自抗扰控制通过扩张状态观测器估计系统总扰动，并在控制律中进行补偿，能够在模型不精确和外部扰动存在时提高系统鲁棒性[40-45]。Han提出的ADRC方法将未知动态和外部扰动统一视为总扰动，并通过扩张状态观测器进行实时估计[40]；Gao进一步提出基于带宽参数化的ADRC整定方法，提高了该方法的工程可调性[41]；Guo和Zhao、Sira-Ramírez等则从非线性系统控制和理论分析角度对ADRC进行了系统阐述[44-45]。因此，在单体LQR平衡控制基础上引入ADRC扰动补偿，有助于增强链式系统在复杂地形和强耦合条件下的跟踪稳定性。
+
+总体而言，现有多机器人协同控制和MPC研究为链式轮足系统提供了重要方法基础，但仍存在以下不足：第一，多数队形控制研究假设机器人之间没有刚性物理连接，难以直接处理铰接点位置和速度一致约束；第二，部分铰接车辆研究主要面向平面车辆或拖车系统，较少考虑轮足单体的欠驱动平衡和变腿长构型；第三，轮足机器人控制研究多集中于单体运动性能，对多个平衡轮足单体机械连接后的误差传播和协同控制关注不足；第四，单体平衡控制与链式协同控制之间的层级关系仍需进一步明确。基于上述问题，本文围绕链式自重组轮足机器人系统，建立单体轮足建模、链式运动学约束建模和分层协同控制框架，为后续实机控制和性能优化提供基础。
+
+## 1.3 本文主要研究内容
+
+本文以链式自重组轮足机器人为研究对象，围绕单体建模、基础平衡控制、链式运动学约束和协同控制优化等问题展开研究。主要研究内容如下。
+
+第一，建立单体轮足机器人结构模型与腿部运动学模型。根据机器人单体的轮腿复合结构，定义机体坐标系、世界坐标系和腿部虚拟变量，分析四连杆腿部机构的几何约束关系，推导关节空间与等效腿长、腿摆角之间的映射关系。在此基础上，基于虚功原理建立虚拟腿空间广义力与关节驱动力矩之间的映射关系，为后续腿长调节、姿态控制和关节力矩分配提供运动学基础。
+
+第二，建立单体轮足机器人的动力学模型并设计基础平衡控制器。针对尾部辅助机构离地和触地等典型工况，分析机体、腿部、轮端和尾部机构之间的受力关系，采用牛顿-欧拉方法建立单体动力学方程，并通过消去内部约束力得到适合控制器设计的动力学表达。在平衡点附近对系统进行线性化，建立状态空间模型，并基于线性二次型调节器设计单体平衡控制器，实现对机体姿态、前向速度、腿部摆角和尾部姿态等状态的综合反馈控制。
+
+第三，研究腿长变化和构型变化对单体控制器的影响。由于腿长变化会改变系统质量分布、几何参数和线性化模型，固定反馈增益难以在较大构型范围内保持一致控制性能。为提高控制器对变构型过程的适应性，本文在不同腿长组合下计算平衡点和LQR反馈增益，并采用参数化拟合方法描述控制器增益与左右腿长之间的关系，从而在保证实时性的同时提高单体控制器对腿长变化的适应能力。
+
+第四，建立链式系统运动学约束模型。针对多个单体通过铰接机构串联形成的链式结构，分析相邻单体之间的铰接角关系、位置一致约束和速度一致约束。根据平面刚体运动学，推导由前车速度、前车角速度和相邻航向角关系确定后车期望线速度与角速度的速度传播模型。该模型能够描述头车运动指令向后续单体逐级传播的过程，是链式系统期望运动序列生成和协同控制器设计的基础。
+
+第五，构建链式系统分层协同控制框架。针对单体平衡控制与链式几何约束之间的耦合问题，本文采用分层控制思想：上层协同控制器根据链式运动学模型生成满足铰接约束的期望速度和姿态序列，下层单体控制器根据期望状态完成局部平衡控制和力矩分配。在此基础上，进一步讨论基于分布式模型预测控制的协同跟踪策略，将速度误差、铰接角误差、铰接点速度一致误差和输入变化率等纳入预测优化指标，以提高链式系统运动协调性。
+
+第六，研究基于LQR-ADRC的单体鲁棒控制扩展方法。针对模型误差、地面扰动、链式铰接耦合和尾部状态变化等因素对单体跟踪性能的影响，本文在LQR状态反馈基础上引入扩张状态观测器，将未建模动态和外部扰动视为总扰动进行估计，并将扰动估计量作为补偿项引入控制律，从而构成LQR-ADRC复合控制结构。该方法为提升链式系统在复杂地形和强扰动条件下的鲁棒性提供了可行思路。
+
+## 1.4 论文组织结构
+
+本文共分为五章，各章内容安排如下。
+
+第一章为绪论。主要介绍链式自重组轮足机器人协同控制问题的研究背景与意义，综述自重组机器人、轮足机器人、多机器人协同控制、模型预测控制和自抗扰控制等相关研究现状，并说明本文的主要研究内容与论文结构。
+
+第二章为链式系统建模。首先介绍单体轮足机器人结构和坐标系定义，建立单体平面运动学模型和腿部四连杆机构运动学模型；随后基于虚拟模型控制思想推导虚拟腿空间广义力与关节力矩之间的映射关系；最后分析相邻单体的铰接结构与运动约束，建立链式系统运动学模型和速度传播关系。
+
+第三章为单机动力学分析与基础控制器设计。针对单体轮足机器人欠驱动、变构型和尾部辅助支撑等特点，建立单体动力学模型，并在平衡点附近线性化得到状态空间表达；在此基础上设计LQR基础平衡控制器，并结合腿长变化讨论参数化增益拟合方法，为单体稳定运动和链式系统跟踪控制提供底层控制基础。
+
+第四章为协同控制器优化方案。首先分析单体LQR控制器在链式连接场景下面临的局限性；随后构建链式系统分层协同控制框架，将链式运动学协调与单体姿态稳定相分离；进一步提出基于DMPC的协同跟踪控制策略，给出预测模型、性能指标、约束条件和分布式信息交互方式；最后引入LQR-ADRC单体鲁棒控制方法，提高系统对模型误差和外部扰动的适应能力。
+
+第五章为实验测试与结果分析。主要介绍实验平台组成、测试系统、实验方案和评价指标，并围绕单体平衡、速度跟踪、链式协同运动、DMPC协同控制和LQR-ADRC鲁棒补偿等内容设计实验验证方案。通过速度误差、姿态误差、铰接角误差、稳定时间和控制输入等指标，对不同控制策略的性能进行对比分析。
+
+最后为结论部分。总结本文在单体轮足建模、LQR平衡控制、链式运动学约束建模、分层协同控制框架和鲁棒控制扩展方面的主要工作，并对后续实机实验完善、DMPC约束优化和复杂地形鲁棒控制等方向进行展望。
+
+---
+
+# 参考文献
+
+[1] Siegwart R, Nourbakhsh I R, Scaramuzza D. *Introduction to Autonomous Mobile Robots*. 2nd ed. Cambridge: MIT Press, 2011.
+
+[2] Corke P. *Robotics, Vision and Control: Fundamental Algorithms in MATLAB*. 2nd ed. Cham: Springer, 2017.
+
+[3] Fukuda T, Kawauchi Y. Dynamically reconfigurable robotic system[C]//Proceedings of the IEEE International Conference on Robotics and Automation. Philadelphia, USA: IEEE, 1988: 1581-1586.
+
+[4] Chirikjian G S. Kinematics of a metamorphic robotic system[C]//Proceedings of the IEEE International Conference on Robotics and Automation. San Diego, USA: IEEE, 1994: 366-371.
+
+[5] Yim M, Duff D G, Roufas K D. PolyBot: a modular reconfigurable robot[C]//Proceedings of the IEEE International Conference on Robotics and Automation. San Francisco, USA: IEEE, 2000: 514-520.
+
+[6] Yim M, Zhang Y, Duff D. Modular robots[J]. *IEEE Spectrum*, 2002, 39(2): 30-34.
+
+[7] Murata S, Yoshida E, Kamimura A, Kurokawa H, Tomita K, Kokaji S. M-TRAN: self-reconfigurable modular robotic system[J]. *IEEE/ASME Transactions on Mechatronics*, 2002, 7(4): 431-441.
+
+[8] Yim M, Shen W M, Salemi B, Rus D, Moll M, Lipson H, Klavins E, Chirikjian G S. Modular self-reconfigurable robot systems[J]. *IEEE Robotics & Automation Magazine*, 2007, 14(1): 43-52.
+
+[9] Murata S, Kurokawa H. Self-reconfigurable robots[J]. *IEEE Robotics & Automation Magazine*, 2007, 14(1): 71-78.
+
+[10] Castano A, Shen W M, Will P. CONRO: towards deployable robots with inter-robots metamorphic capabilities[J]. *Autonomous Robots*, 2000, 8(3): 309-324.
+
+[11] Salemi B, Moll M, Shen W M. SUPERBOT: a deployable, multi-functional, and modular self-reconfigurable robotic system[C]//Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems. Beijing, China: IEEE, 2006: 3636-3641.
+
+[12] Chennareddy S S R, Agrawal A, Karuppiah A. Modular self-reconfigurable robotic systems: a survey on hardware architectures[J]. *Journal of Robotics*, 2017: 5013532.
+
+[13] Endo G, Hirose S. Study on Roller-Walker: energy efficiency of roller-walk[C]//Proceedings of the IEEE International Conference on Robotics and Automation. Detroit, USA: IEEE, 1999.
+
+[14] Kim Y S, Jung G P, Kim H, Cho K J, Chu C N. Wheel transformer: a wheel-leg hybrid robot with passive transformable wheels[J]. *IEEE Transactions on Robotics*, 2014, 30(6): 1487-1498.
+
+[15] Klemm V, Morra A, Salzmann C, Tschopp F, Bodie K, Gulich L, et al. Ascento: a two-wheeled jumping robot[C]//Proceedings of the IEEE International Conference on Robotics and Automation. Montreal, Canada: IEEE, 2019: 7515-7521.
+
+[16] Bjelonic M, Grandia R, Harley O, Galliard C, Zimmermann S, Hutter M. Whole-body MPC and online gait sequence generation for wheeled-legged robots[C]//Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems. Prague, Czech Republic: IEEE, 2021: 8388-8395.
+
+[17] Geilinger M, Winberg S, Coros S. A computational framework for designing skilled legged-wheeled robots[J]. *IEEE Robotics and Automation Letters*, 2020, 5(2): 3674-3681.
+
+[18] Grandia R, Farshidian F, Ranftl R, Hutter M. Feedback MPC for torque-controlled legged robots[J]. *IEEE Robotics and Automation Letters*, 2019, 4(2): 1517-1524.
+
+[19] Raibert M H. *Legged Robots That Balance*. Cambridge: MIT Press, 1986.
+
+[20] Pratt J, Chew C M, Torres A, Dilworth P, Pratt G. Virtual model control: an intuitive approach for bipedal locomotion[J]. *The International Journal of Robotics Research*, 2001, 20(2): 129-143.
+
+[21] Kajita S, Kanehiro F, Kaneko K, Fujiwara K, Harada K, Yokoi K, Hirukawa H. Biped walking pattern generation by using preview control of zero-moment point[C]//Proceedings of the IEEE International Conference on Robotics and Automation. Taipei, China: IEEE, 2003: 1620-1626.
+
+[22] Anderson B D O, Moore J B. *Optimal Control: Linear Quadratic Methods*. Englewood Cliffs: Prentice Hall, 1990.
+
+[23] Kirk D E. *Optimal Control Theory: An Introduction*. Englewood Cliffs: Prentice Hall, 1970.
+
+[24] Murray R M, Sastry S S. Nonholonomic motion planning: steering using sinusoids[J]. *IEEE Transactions on Automatic Control*, 1993, 38(5): 700-716.
+
+[25] Campion G, Bastin G, D'Andrea-Novel B. Structural properties and classification of kinematic and dynamic models of wheeled mobile robots[J]. *IEEE Transactions on Robotics and Automation*, 1996, 12(1): 47-62.
+
+[26] Laumond J P. *Robot Motion Planning and Control*. Berlin: Springer, 1998.
+
+[27] Lamiraux F, Laumond J P. Smooth motion planning for car-like vehicles[J]. *IEEE Transactions on Robotics and Automation*, 2001, 17(4): 498-501.
+
+[28] Ren W, Beard R W, Atkins E M. Information consensus in multivehicle cooperative control[J]. *IEEE Control Systems Magazine*, 2007, 27(2): 71-82.
+
+[29] Olfati-Saber R, Fax J A, Murray R M. Consensus and cooperation in networked multi-agent systems[J]. *Proceedings of the IEEE*, 2007, 95(1): 215-233.
+
+[30] Ren W, Beard R W. *Distributed Consensus in Multi-vehicle Cooperative Control: Theory and Applications*. London: Springer, 2008.
+
+[31] Liu Y, Bucknall R. A survey of formation control and motion planning of multiple unmanned vehicles[J]. *Robotica*, 2018, 36(7): 1019-1047.
+
+[32] Lewis M A, Tan K H. High precision formation control of mobile robots using virtual structures[J]. *Autonomous Robots*, 1997, 4(4): 387-403.
+
+[33] Dong W, Farrell J A. Cooperative control of multiple nonholonomic mobile agents[J]. *IEEE Transactions on Automatic Control*, 2008, 53(6): 1434-1448.
+
+[34] Camacho E F, Bordons C. *Model Predictive Control*. 2nd ed. London: Springer, 2007.
+
+[35] Rawlings J B, Mayne D Q, Diehl M. *Model Predictive Control: Theory, Computation, and Design*. 2nd ed. Madison: Nob Hill Publishing, 2017.
+
+[36] Mayne D Q, Rawlings J B, Rao C V, Scokaert P O M. Constrained model predictive control: stability and optimality[J]. *Automatica*, 2000, 36(6): 789-814.
+
+[37] Dunbar W B, Murray R M. Distributed receding horizon control for multi-vehicle formation stabilization[J]. *Automatica*, 2006, 42(4): 549-558.
+
+[38] Christofides P D, Scattolini R, de la Peña D M, Liu J. Distributed model predictive control: a tutorial review and future research directions[J]. *Computers & Chemical Engineering*, 2013, 51: 21-41.
+
+[39] Farina M, Ferrari-Trecate G, Scattolini R. Distributed moving horizon estimation for linear constrained systems[J]. *IEEE Transactions on Automatic Control*, 2010, 55(11): 2462-2475.
+
+[40] Farina M, Giulioni L, Scattolini R. Distributed predictive control: a non-cooperative algorithm with neighbor-to-neighbor communication for linear systems[J]. *Automatica*, 2012, 48(6): 1088-1096.
+
+[41] Han J Q. From PID to active disturbance rejection control[J]. *IEEE Transactions on Industrial Electronics*, 2009, 56(3): 900-906.
+
+[42] Gao Z. Scaling and bandwidth-parameterization based controller tuning[C]//Proceedings of the American Control Conference. Denver, USA: IEEE, 2003: 4989-4996.
+
+[43] Huang Y, Han J Q. Analysis and design for nonlinear continuous extended state observer[J]. *Chinese Science Bulletin*, 2000, 45(21): 1938-1944.
+
+[44] Guo B Z, Zhao Z L. *Active Disturbance Rejection Control for Nonlinear Systems: An Introduction*. Singapore: Wiley, 2016.
+
+[45] Sira-Ramírez H, Luviano-Juárez A, Ramírez-Neria M, Zurita-Bustamante E W. *Active Disturbance Rejection Control of Dynamic Systems: A Flatness Based Approach*. Oxford: Butterworth-Heinemann, 2017.
+
+[1]: https://fab.cba.mit.edu/classes/865.18/discrete/micro/solder_cubes.pdf?utm_source=chatgpt.com "a self-soldering self-reconfiguring modular robot system"

@@ -1,0 +1,17 @@
+digraph G {
+"vehicle_0_odom" -> "vehicle_0_body"[label="Broadcaster: /gazebo\nAverage rate: 100.200 Hz\nMost recent transform: 705.028 ( 0.010 sec old)\nBuffer length: 4.990 sec\n"];
+"vehicle_1_odom" -> "vehicle_1_body"[label="Broadcaster: /gazebo\nAverage rate: 100.200 Hz\nMost recent transform: 705.028 ( 0.010 sec old)\nBuffer length: 4.990 sec\n"];
+"vehicle_2_odom" -> "vehicle_2_body"[label="Broadcaster: /gazebo\nAverage rate: 100.200 Hz\nMost recent transform: 705.029 ( 0.009 sec old)\nBuffer length: 4.990 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 705.038"[ shape=plaintext ] ;
+ }->"vehicle_0_odom";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 705.038"[ shape=plaintext ] ;
+ }->"vehicle_1_odom";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 705.038"[ shape=plaintext ] ;
+ }->"vehicle_2_odom";
+}

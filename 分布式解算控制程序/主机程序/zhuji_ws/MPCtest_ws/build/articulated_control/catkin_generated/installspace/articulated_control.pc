@@ -1,0 +1,8 @@
+prefix=/home/computer/robot1_ws/MPCtest_ws/install
+
+Name: articulated_control
+Description: Description of articulated_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime rospy std_msgs

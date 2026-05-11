@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>standard_robot_pp_ros1</name>
+  <version>0.1.0</version>
+  <description>StandardRobot++ Drive for ROS1 packages.</description>
+  <maintainer email="1120220518@smbu.edu.cn">Penguin</maintainer>
+  <maintainer email="lihanchen2004@163.com">Lihan Chen</maintainer>
+  <license>MIT</license>
+  <url type="website">https://gitee.com/SMBU-POLARBEAR/standard_robot_pp_ros2</url>
+  <url type="bugtracker">https://gitee.com/SMBU-POLARBEAR/standard_robot_pp_ros2/issues</url>
+  <author email="1120220518@smbu.edu.cn">Penguin</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>articulated_control</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
+  <export />
+</package>

@@ -1,0 +1,27 @@
+\input{images/control_diagrams/control_diagram_styles.tex}
+
+\begin{figure}[htbp]
+  \centering
+  \resizebox{0.98\textwidth}{!}{%
+  \begin{tikzpicture}
+    \node[ctrlBlock] (cmd) at (0,0) {头车输入\\$v_1,\omega_1$};
+    \node[ctrlBlock] (pose) at (3.0,0) {各单体位姿\\$x_i,y_i,\phi_i$};
+    \node[ctrlBlock] (joint) at (6.0,0) {铰接角计算\\$\theta_i$};
+    \node[ctrlBlock] (constraint) at (9.0,0) {铰接点速度\\一致约束};
+    \node[ctrlBlock] (prop) at (12.0,0) {后车期望输入\\$v_{i+1},\omega_{i+1}$};
+
+    \node[ctrlSmall] (leg) at (3.0,-1.45) {腿部运动学\\$q_j \rightarrow L_0,\Phi_0$};
+    \node[ctrlSmall] (seq) at (9.0,-1.45) {逐级传播\\形成链式期望序列};
+
+    \draw[ctrlArrow] (cmd) -- (pose);
+    \draw[ctrlArrow] (pose) -- (joint);
+    \draw[ctrlArrow] (joint) -- (constraint);
+    \draw[ctrlArrow] (constraint) -- (prop);
+    \draw[ctrlArrow] (pose) -- (leg);
+    \draw[ctrlArrow] (prop) |- (seq);
+    \draw[ctrlDashArrow] (seq.south) -- ++(0,-0.7) -| node[pos=0.24, below, font=\footnotesize] {更新下一单体} ($(leg.west)+(-0.35,-0.05)$) |- (pose.west);
+  \end{tikzpicture}
+  }%
+  \caption{链式系统运动学建模框图}
+  \label{fig:ch2_chain_kinematics}
+\end{figure}

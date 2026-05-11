@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/computer/robot1_ws/MPCtest_ws/install/setup.sh

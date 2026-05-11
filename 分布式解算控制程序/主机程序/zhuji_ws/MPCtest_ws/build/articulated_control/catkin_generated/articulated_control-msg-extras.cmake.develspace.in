@@ -1,0 +1,2 @@
+set(articulated_control_MESSAGE_FILES "/home/computer/robot1_ws/MPCtest_ws/src/articulated_control/msg/ArticulatedState.msg;/home/computer/robot1_ws/MPCtest_ws/src/articulated_control/msg/ControlSequenceVW.msg;/home/computer/robot1_ws/MPCtest_ws/src/articulated_control/msg/FleetPhi.msg;/home/computer/robot1_ws/MPCtest_ws/src/articulated_control/msg/FleetExpectedSequence.msg;/home/computer/robot1_ws/MPCtest_ws/src/articulated_control/msg/FleetState.msg;/home/computer/robot1_ws/MPCtest_ws/src/articulated_control/msg/VehicleState.msg")
+set(articulated_control_SERVICE_FILES "")

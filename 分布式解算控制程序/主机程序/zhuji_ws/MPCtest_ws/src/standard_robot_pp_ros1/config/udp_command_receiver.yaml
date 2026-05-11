@@ -1,0 +1,5 @@
+listen_ip: 192.168.3.103
+listen_port: 6000
+cmd_vel_topic: cmd_vel
+cmd_leg_length_topic: cmd_leg_length
+cmd_gimbal_topic: cmd_gimbal_joint

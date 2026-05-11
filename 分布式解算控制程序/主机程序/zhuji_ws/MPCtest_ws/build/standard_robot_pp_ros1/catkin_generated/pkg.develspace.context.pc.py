@@ -1,0 +1,8 @@
+# generated from catkin/cmake/template/pkg.context.pc.in
+CATKIN_PACKAGE_PREFIX = ""
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/include".split(';') if "/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/include" != "" else []
+PROJECT_CATKIN_DEPENDS = "articulated_control;roscpp;rospy;std_msgs;geometry_msgs;sensor_msgs;tf2_ros;tf2_geometry_msgs".replace(';', ' ')
+PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
+PROJECT_NAME = "standard_robot_pp_ros1"
+PROJECT_SPACE_DIR = "/home/computer/robot1_ws/MPCtest_ws/devel"
+PROJECT_VERSION = "0.1.0"

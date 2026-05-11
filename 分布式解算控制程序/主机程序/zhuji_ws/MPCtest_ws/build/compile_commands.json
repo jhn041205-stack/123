@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/computer/robot1_ws/MPCtest_ws/build/standard_robot_pp_ros1",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"standard_robot_pp_ros1\\\" -I/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/include -I/home/computer/robot1_ws/MPCtest_ws/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3    -Wall -Werror -std=gnu++14 -o CMakeFiles/imu_udp_sender_node.dir/src/imu_udp_sender_node.cpp.o -c /home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/imu_udp_sender_node.cpp",
+  "file": "/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/imu_udp_sender_node.cpp"
+},
+{
+  "directory": "/home/computer/robot1_ws/MPCtest_ws/build/standard_robot_pp_ros1",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"standard_robot_pp_ros1\\\" -I/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/include -I/home/computer/robot1_ws/MPCtest_ws/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3    -Wall -Werror -std=gnu++14 -o CMakeFiles/standard_robot_pp_ros1_node.dir/src/standard_robot_pp_ros1.cpp.o -c /home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/standard_robot_pp_ros1.cpp",
+  "file": "/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/standard_robot_pp_ros1.cpp"
+},
+{
+  "directory": "/home/computer/robot1_ws/MPCtest_ws/build/standard_robot_pp_ros1",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"standard_robot_pp_ros1\\\" -I/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/include -I/home/computer/robot1_ws/MPCtest_ws/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3    -Wall -Werror -std=gnu++14 -o CMakeFiles/standard_robot_pp_ros1_node.dir/src/crc8_crc16.cpp.o -c /home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/crc8_crc16.cpp",
+  "file": "/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/crc8_crc16.cpp"
+},
+{
+  "directory": "/home/computer/robot1_ws/MPCtest_ws/build/standard_robot_pp_ros1",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"standard_robot_pp_ros1\\\" -I/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/include -I/home/computer/robot1_ws/MPCtest_ws/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3    -Wall -Werror -std=gnu++14 -o CMakeFiles/standard_robot_pp_ros1_node.dir/src/main.cpp.o -c /home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/main.cpp",
+  "file": "/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/main.cpp"
+},
+{
+  "directory": "/home/computer/robot1_ws/MPCtest_ws/build/standard_robot_pp_ros1",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"standard_robot_pp_ros1\\\" -I/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/include -I/home/computer/robot1_ws/MPCtest_ws/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3    -Wall -Werror -std=gnu++14 -o CMakeFiles/udp_command_receiver_node.dir/src/udp_command_receiver_node.cpp.o -c /home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/udp_command_receiver_node.cpp",
+  "file": "/home/computer/robot1_ws/MPCtest_ws/src/standard_robot_pp_ros1/src/udp_command_receiver_node.cpp"
+}
+]

@@ -1,0 +1,2837 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{siegwart2011introduction}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=6ee8958bbf32527489012d8ca7c95ee3}{%
+           family={Siegwart},
+           familyi={S\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+        {{hash=43a2e4df07c5c4e4eb90b1e11bfd57b6}{%
+           family={Nourbakhsh},
+           familyi={N\bibinitperiod},
+           given={Illah\bibnamedelima R.},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=dac21ab4ede215439fcc6b051be53a11}{%
+           family={Scaramuzza},
+           familyi={S\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=6ee8958bbf32527489012d8ca7c95ee3}{%
+           family={Siegwart},
+           familyi={S\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+        {{hash=43a2e4df07c5c4e4eb90b1e11bfd57b6}{%
+           family={Nourbakhsh},
+           familyi={N\bibinitperiod},
+           given={Illah\bibnamedelima R.},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=dac21ab4ede215439fcc6b051be53a11}{%
+           family={Scaramuzza},
+           familyi={S\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{5d9ef354cd4bda2a3935c6909059aea8}
+      \strng{fullhash}{2ce77ae90cdcaea9f60cf7424394cb04}
+      \strng{fullhashraw}{2ce77ae90cdcaea9f60cf7424394cb04}
+      \strng{bibnamehash}{2ce77ae90cdcaea9f60cf7424394cb04}
+      \strng{authorbibnamehash}{2ce77ae90cdcaea9f60cf7424394cb04}
+      \strng{authornamehash}{5d9ef354cd4bda2a3935c6909059aea8}
+      \strng{authorfullhash}{2ce77ae90cdcaea9f60cf7424394cb04}
+      \strng{authorfullhashraw}{2ce77ae90cdcaea9f60cf7424394cb04}
+      \strng{nameabibnamehash}{2ce77ae90cdcaea9f60cf7424394cb04}
+      \strng{nameanamehash}{5d9ef354cd4bda2a3935c6909059aea8}
+      \strng{nameafullhash}{2ce77ae90cdcaea9f60cf7424394cb04}
+      \strng{nameafullhashraw}{2ce77ae90cdcaea9f60cf7424394cb04}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Introduction to Autonomous Mobile Robots}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \keyw{siegwart2011introduction}
+    \endentry
+    \entry{corke2017robotics}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c0e503339314930d140b67b5e7c55c3e}{%
+           family={Corke},
+           familyi={C\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=c0e503339314930d140b67b5e7c55c3e}{%
+           family={Corke},
+           familyi={C\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{fullhash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{fullhashraw}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{bibnamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorbibnamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authornamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorfullhash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{authorfullhashraw}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{nameabibnamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{nameanamehash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{nameafullhash}{c0e503339314930d140b67b5e7c55c3e}
+      \strng{nameafullhashraw}{c0e503339314930d140b67b5e7c55c3e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Robotics, Vision and Control: Fundamental Algorithms in MATLAB}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \keyw{corke2017robotics}
+    \endentry
+    \entry{endo1999roller}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=fd2efaa3302ecd394c489398e12f6feb}{%
+           family={Endo},
+           familyi={E\bibinitperiod},
+           given={Gen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d2900547b6d95bb73701ee59c3d05c80}{%
+           family={Hirose},
+           familyi={H\bibinitperiod},
+           given={Shigeo},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=fd2efaa3302ecd394c489398e12f6feb}{%
+           family={Endo},
+           familyi={E\bibinitperiod},
+           given={Gen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d2900547b6d95bb73701ee59c3d05c80}{%
+           family={Hirose},
+           familyi={H\bibinitperiod},
+           given={Shigeo},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Detroit, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{9f6f7c40237e17ddbffcc68a3ad478f8}
+      \strng{fullhash}{4cc6b731f90c0804a5c501eacff2678f}
+      \strng{fullhashraw}{4cc6b731f90c0804a5c501eacff2678f}
+      \strng{bibnamehash}{4cc6b731f90c0804a5c501eacff2678f}
+      \strng{authorbibnamehash}{4cc6b731f90c0804a5c501eacff2678f}
+      \strng{authornamehash}{9f6f7c40237e17ddbffcc68a3ad478f8}
+      \strng{authorfullhash}{4cc6b731f90c0804a5c501eacff2678f}
+      \strng{authorfullhashraw}{4cc6b731f90c0804a5c501eacff2678f}
+      \strng{nameabibnamehash}{4cc6b731f90c0804a5c501eacff2678f}
+      \strng{nameanamehash}{9f6f7c40237e17ddbffcc68a3ad478f8}
+      \strng{nameafullhash}{4cc6b731f90c0804a5c501eacff2678f}
+      \strng{nameafullhashraw}{4cc6b731f90c0804a5c501eacff2678f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Robotics and Automation}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Study on Roller-Walker: Energy Efficiency of Roller-Walk}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \keyw{endo1999roller}
+    \endentry
+    \entry{kim2014wheel}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=a39692e9908bd22a3566770371901489}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Young-Su},
+           giveni={Y\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=d37e9d871b6ae8a80bce19d2449c003f}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Gwang-Pil},
+           giveni={G\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=591b2d1c7a7bbfa2aa9b386562212961}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=17fcd8842b98234d8b14b15a1bd24577}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Kyu-Jin},
+           giveni={K\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=aff9b8d1177d417f1a1a1e416aeee151}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Chong-Nam},
+           giveni={C\bibinithyphendelim N\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=a39692e9908bd22a3566770371901489}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Young-Su},
+           giveni={Y\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=d37e9d871b6ae8a80bce19d2449c003f}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Gwang-Pil},
+           giveni={G\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=591b2d1c7a7bbfa2aa9b386562212961}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=17fcd8842b98234d8b14b15a1bd24577}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Kyu-Jin},
+           giveni={K\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=aff9b8d1177d417f1a1a1e416aeee151}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Chong-Nam},
+           giveni={C\bibinithyphendelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{007e68ef77d5ebf16cec1859f76eccac}
+      \strng{fullhash}{2fbb3e3327e643bc5287900e90dbc274}
+      \strng{fullhashraw}{2fbb3e3327e643bc5287900e90dbc274}
+      \strng{bibnamehash}{c6c1bd4ba398b41c9a76a1ef93c635ce}
+      \strng{authorbibnamehash}{c6c1bd4ba398b41c9a76a1ef93c635ce}
+      \strng{authornamehash}{007e68ef77d5ebf16cec1859f76eccac}
+      \strng{authorfullhash}{2fbb3e3327e643bc5287900e90dbc274}
+      \strng{authorfullhashraw}{2fbb3e3327e643bc5287900e90dbc274}
+      \strng{nameabibnamehash}{c6c1bd4ba398b41c9a76a1ef93c635ce}
+      \strng{nameanamehash}{007e68ef77d5ebf16cec1859f76eccac}
+      \strng{nameafullhash}{2fbb3e3327e643bc5287900e90dbc274}
+      \strng{nameafullhashraw}{2fbb3e3327e643bc5287900e90dbc274}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{Wheel Transformer: A Wheel-Leg Hybrid Robot with Passive Transformable Wheels}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{30}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{1487\bibrangedash 1498}
+      \range{pages}{12}
+      \keyw{kim2014wheel}
+    \endentry
+    \entry{klemm2019ascento}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=ddc2b7283c0a00ac2d2763ec0448acdf}{%
+           family={Klemm},
+           familyi={K\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=03447f51a9da7d9ec497cae3966a50dd}{%
+           family={Morra},
+           familyi={M\bibinitperiod},
+           given={Alessandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=108a03e81a09b22be51533fdaeb714f9}{%
+           family={Salzmann},
+           familyi={S\bibinitperiod},
+           given={Cedric},
+           giveni={C\bibinitperiod}}}%
+        {{hash=967f78440266417793c6a885a05d6308}{%
+           family={Tschopp},
+           familyi={T\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=73e469cecef514f8e80a0fac534902ca}{%
+           family={Bodie},
+           familyi={B\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=926e43bab3e748983d1046a06a768f44}{%
+           family={Gulich},
+           familyi={G\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+      }
+      \name{namea}{6}{}{%
+        {{hash=ddc2b7283c0a00ac2d2763ec0448acdf}{%
+           family={Klemm},
+           familyi={K\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=03447f51a9da7d9ec497cae3966a50dd}{%
+           family={Morra},
+           familyi={M\bibinitperiod},
+           given={Alessandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=108a03e81a09b22be51533fdaeb714f9}{%
+           family={Salzmann},
+           familyi={S\bibinitperiod},
+           given={Cedric},
+           giveni={C\bibinitperiod}}}%
+        {{hash=967f78440266417793c6a885a05d6308}{%
+           family={Tschopp},
+           familyi={T\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=73e469cecef514f8e80a0fac534902ca}{%
+           family={Bodie},
+           familyi={B\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=926e43bab3e748983d1046a06a768f44}{%
+           family={Gulich},
+           familyi={G\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Montreal, Canada}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d3f8ab4e6d88ff4d0d62567b03728b7f}
+      \strng{fullhash}{1e4736c9519fc0ad9ea7227926f18cb0}
+      \strng{fullhashraw}{1e4736c9519fc0ad9ea7227926f18cb0}
+      \strng{bibnamehash}{af08121ae8254a5b36b730bf41c73395}
+      \strng{authorbibnamehash}{af08121ae8254a5b36b730bf41c73395}
+      \strng{authornamehash}{d3f8ab4e6d88ff4d0d62567b03728b7f}
+      \strng{authorfullhash}{1e4736c9519fc0ad9ea7227926f18cb0}
+      \strng{authorfullhashraw}{1e4736c9519fc0ad9ea7227926f18cb0}
+      \strng{nameabibnamehash}{af08121ae8254a5b36b730bf41c73395}
+      \strng{nameanamehash}{d3f8ab4e6d88ff4d0d62567b03728b7f}
+      \strng{nameafullhash}{1e4736c9519fc0ad9ea7227926f18cb0}
+      \strng{nameafullhashraw}{1e4736c9519fc0ad9ea7227926f18cb0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Robotics and Automation}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Ascento: A Two-Wheeled Jumping Robot}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{7515\bibrangedash 7521}
+      \range{pages}{7}
+      \keyw{klemm2019ascento}
+    \endentry
+    \entry{bjelonic2021whole}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=53f42f424532d55e35ab63be96aba40f}{%
+           family={Bjelonic},
+           familyi={B\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f85389162930f5ad2711e55587aade76}{%
+           family={Grandia},
+           familyi={G\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7f316fb2dd4ab21192895b89d85bc0ed}{%
+           family={Harley},
+           familyi={H\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c91aa1aa99f93ca76e5691dc178220a5}{%
+           family={Galliard},
+           familyi={G\bibinitperiod},
+           given={Corentin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fd928bf06cc39f604fd284b96a90b9d9}{%
+           family={Zimmermann},
+           familyi={Z\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=164607f9daa616a03bed0e2bf6531a8d}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{6}{}{%
+        {{hash=53f42f424532d55e35ab63be96aba40f}{%
+           family={Bjelonic},
+           familyi={B\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f85389162930f5ad2711e55587aade76}{%
+           family={Grandia},
+           familyi={G\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7f316fb2dd4ab21192895b89d85bc0ed}{%
+           family={Harley},
+           familyi={H\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c91aa1aa99f93ca76e5691dc178220a5}{%
+           family={Galliard},
+           familyi={G\bibinitperiod},
+           given={Corentin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fd928bf06cc39f604fd284b96a90b9d9}{%
+           family={Zimmermann},
+           familyi={Z\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=164607f9daa616a03bed0e2bf6531a8d}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Prague, Czech Republic}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a939051a12e29903f374a595eff6298a}
+      \strng{fullhash}{2488f7b17427644223e17763b50c00cf}
+      \strng{fullhashraw}{2488f7b17427644223e17763b50c00cf}
+      \strng{bibnamehash}{43eb16bd8da0d9bd03fddc72bbb8084f}
+      \strng{authorbibnamehash}{43eb16bd8da0d9bd03fddc72bbb8084f}
+      \strng{authornamehash}{a939051a12e29903f374a595eff6298a}
+      \strng{authorfullhash}{2488f7b17427644223e17763b50c00cf}
+      \strng{authorfullhashraw}{2488f7b17427644223e17763b50c00cf}
+      \strng{nameabibnamehash}{43eb16bd8da0d9bd03fddc72bbb8084f}
+      \strng{nameanamehash}{a939051a12e29903f374a595eff6298a}
+      \strng{nameafullhash}{2488f7b17427644223e17763b50c00cf}
+      \strng{nameafullhashraw}{2488f7b17427644223e17763b50c00cf}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Whole-Body MPC and Online Gait Sequence Generation for Wheeled-Legged Robots}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{8388\bibrangedash 8395}
+      \range{pages}{8}
+      \keyw{bjelonic2021whole}
+    \endentry
+    \entry{grandia2019feedback}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=f85389162930f5ad2711e55587aade76}{%
+           family={Grandia},
+           familyi={G\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c4c1da2dc11d020bb26327be9d2292a5}{%
+           family={Farshidian},
+           familyi={F\bibinitperiod},
+           given={Farbod},
+           giveni={F\bibinitperiod}}}%
+        {{hash=80e68e08dd8bccf126d4163539480e5d}{%
+           family={Ranftl},
+           familyi={R\bibinitperiod},
+           given={Rene},
+           giveni={R\bibinitperiod}}}%
+        {{hash=164607f9daa616a03bed0e2bf6531a8d}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=f85389162930f5ad2711e55587aade76}{%
+           family={Grandia},
+           familyi={G\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c4c1da2dc11d020bb26327be9d2292a5}{%
+           family={Farshidian},
+           familyi={F\bibinitperiod},
+           given={Farbod},
+           giveni={F\bibinitperiod}}}%
+        {{hash=80e68e08dd8bccf126d4163539480e5d}{%
+           family={Ranftl},
+           familyi={R\bibinitperiod},
+           given={Rene},
+           giveni={R\bibinitperiod}}}%
+        {{hash=164607f9daa616a03bed0e2bf6531a8d}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{21e1a792f1574dcccd0faa4286be8745}
+      \strng{fullhash}{bd0f54e835b653d3b2496ae9f0c97229}
+      \strng{fullhashraw}{bd0f54e835b653d3b2496ae9f0c97229}
+      \strng{bibnamehash}{c2be1d4514b0a9bf681261dff4104d36}
+      \strng{authorbibnamehash}{c2be1d4514b0a9bf681261dff4104d36}
+      \strng{authornamehash}{21e1a792f1574dcccd0faa4286be8745}
+      \strng{authorfullhash}{bd0f54e835b653d3b2496ae9f0c97229}
+      \strng{authorfullhashraw}{bd0f54e835b653d3b2496ae9f0c97229}
+      \strng{nameabibnamehash}{c2be1d4514b0a9bf681261dff4104d36}
+      \strng{nameanamehash}{21e1a792f1574dcccd0faa4286be8745}
+      \strng{nameafullhash}{bd0f54e835b653d3b2496ae9f0c97229}
+      \strng{nameafullhashraw}{bd0f54e835b653d3b2496ae9f0c97229}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics and Automation Letters}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Feedback MPC for Torque-Controlled Legged Robots}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{4}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{1517\bibrangedash 1524}
+      \range{pages}{8}
+      \keyw{grandia2019feedback}
+    \endentry
+    \entry{fukuda1988dynamically}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=d780933c196063c1ac2d5f936ea5856a}{%
+           family={Fukuda},
+           familyi={F\bibinitperiod},
+           given={Toshio},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9e7a16cf1f067c244ee96433d72798b2}{%
+           family={Kawauchi},
+           familyi={K\bibinitperiod},
+           given={Yoshio},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=d780933c196063c1ac2d5f936ea5856a}{%
+           family={Fukuda},
+           familyi={F\bibinitperiod},
+           given={Toshio},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9e7a16cf1f067c244ee96433d72798b2}{%
+           family={Kawauchi},
+           familyi={K\bibinitperiod},
+           given={Yoshio},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{cb7f215968d753f3e3bd6784d8599ced}
+      \strng{fullhash}{f75391c1d6796d7f4a3e0a58dda260d8}
+      \strng{fullhashraw}{f75391c1d6796d7f4a3e0a58dda260d8}
+      \strng{bibnamehash}{f75391c1d6796d7f4a3e0a58dda260d8}
+      \strng{authorbibnamehash}{f75391c1d6796d7f4a3e0a58dda260d8}
+      \strng{authornamehash}{cb7f215968d753f3e3bd6784d8599ced}
+      \strng{authorfullhash}{f75391c1d6796d7f4a3e0a58dda260d8}
+      \strng{authorfullhashraw}{f75391c1d6796d7f4a3e0a58dda260d8}
+      \strng{nameabibnamehash}{f75391c1d6796d7f4a3e0a58dda260d8}
+      \strng{nameanamehash}{cb7f215968d753f3e3bd6784d8599ced}
+      \strng{nameafullhash}{f75391c1d6796d7f4a3e0a58dda260d8}
+      \strng{nameafullhashraw}{f75391c1d6796d7f4a3e0a58dda260d8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Robotics and Automation}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Dynamically Reconfigurable Robotic System}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1988}
+      \field{dateera}{ce}
+      \field{pages}{1581\bibrangedash 1586}
+      \range{pages}{6}
+      \keyw{fukuda1988dynamically}
+    \endentry
+    \entry{chirikjian1994kinematics}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=0bb4fe91e5d0c99f7ecf93d5e8c0ca09}{%
+           family={Chirikjian},
+           familyi={C\bibinitperiod},
+           given={Gregory\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=0bb4fe91e5d0c99f7ecf93d5e8c0ca09}{%
+           family={Chirikjian},
+           familyi={C\bibinitperiod},
+           given={Gregory\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {San Diego, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{fullhash}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{fullhashraw}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{bibnamehash}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{authorbibnamehash}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{authornamehash}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{authorfullhash}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{authorfullhashraw}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{nameabibnamehash}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{nameanamehash}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{nameafullhash}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \strng{nameafullhashraw}{0bb4fe91e5d0c99f7ecf93d5e8c0ca09}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Robotics and Automation}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Kinematics of a Metamorphic Robotic System}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{pages}{366\bibrangedash 371}
+      \range{pages}{6}
+      \keyw{chirikjian1994kinematics}
+    \endentry
+    \entry{yim2000polybot}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=3e097fdd54c521b3b8f2321bd045bd74}{%
+           family={Yim},
+           familyi={Y\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=02e1496c46fe707e6ce4393efb44b1b8}{%
+           family={Duff},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=560da675d4785b4b95da247d772fae51}{%
+           family={Roufas},
+           familyi={R\bibinitperiod},
+           given={Kimon\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=3e097fdd54c521b3b8f2321bd045bd74}{%
+           family={Yim},
+           familyi={Y\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=02e1496c46fe707e6ce4393efb44b1b8}{%
+           family={Duff},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=560da675d4785b4b95da247d772fae51}{%
+           family={Roufas},
+           familyi={R\bibinitperiod},
+           given={Kimon\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {San Francisco, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c4dced0426f772906c2fd72088c0c1ef}
+      \strng{fullhash}{ae4487d8a270db30666cf2d41a0f44c4}
+      \strng{fullhashraw}{ae4487d8a270db30666cf2d41a0f44c4}
+      \strng{bibnamehash}{ae4487d8a270db30666cf2d41a0f44c4}
+      \strng{authorbibnamehash}{ae4487d8a270db30666cf2d41a0f44c4}
+      \strng{authornamehash}{c4dced0426f772906c2fd72088c0c1ef}
+      \strng{authorfullhash}{ae4487d8a270db30666cf2d41a0f44c4}
+      \strng{authorfullhashraw}{ae4487d8a270db30666cf2d41a0f44c4}
+      \strng{nameabibnamehash}{ae4487d8a270db30666cf2d41a0f44c4}
+      \strng{nameanamehash}{c4dced0426f772906c2fd72088c0c1ef}
+      \strng{nameafullhash}{ae4487d8a270db30666cf2d41a0f44c4}
+      \strng{nameafullhashraw}{ae4487d8a270db30666cf2d41a0f44c4}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Robotics and Automation}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{PolyBot: A Modular Reconfigurable Robot}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{514\bibrangedash 520}
+      \range{pages}{7}
+      \keyw{yim2000polybot}
+    \endentry
+    \entry{murata2002mtran}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=c1c07eb681823c034499a57d39130bda}{%
+           family={Murata},
+           familyi={M\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dd7f29295bb065ae935d4a57e9701fa5}{%
+           family={Yoshida},
+           familyi={Y\bibinitperiod},
+           given={Eiichi},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b6b28d34bb650a50dd075d79b1668a3e}{%
+           family={Kamimura},
+           familyi={K\bibinitperiod},
+           given={Akiya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=47af98f97c2e41a557d789d6f5a9c578}{%
+           family={Kurokawa},
+           familyi={K\bibinitperiod},
+           given={Haruhisa},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a85792d73a4cff3592efe2a566905b12}{%
+           family={Tomita},
+           familyi={T\bibinitperiod},
+           given={Kohji},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bb18279e409547f68375e59282a2b146}{%
+           family={Kokaji},
+           familyi={K\bibinitperiod},
+           given={Shigeru},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{6}{}{%
+        {{hash=c1c07eb681823c034499a57d39130bda}{%
+           family={Murata},
+           familyi={M\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dd7f29295bb065ae935d4a57e9701fa5}{%
+           family={Yoshida},
+           familyi={Y\bibinitperiod},
+           given={Eiichi},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b6b28d34bb650a50dd075d79b1668a3e}{%
+           family={Kamimura},
+           familyi={K\bibinitperiod},
+           given={Akiya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=47af98f97c2e41a557d789d6f5a9c578}{%
+           family={Kurokawa},
+           familyi={K\bibinitperiod},
+           given={Haruhisa},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a85792d73a4cff3592efe2a566905b12}{%
+           family={Tomita},
+           familyi={T\bibinitperiod},
+           given={Kohji},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bb18279e409547f68375e59282a2b146}{%
+           family={Kokaji},
+           familyi={K\bibinitperiod},
+           given={Shigeru},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{4116765abf3984e5b42108b790c0e6a6}
+      \strng{fullhash}{3b0ac6ad8846f473912de8b110d2aa33}
+      \strng{fullhashraw}{3b0ac6ad8846f473912de8b110d2aa33}
+      \strng{bibnamehash}{e08d7159ecb9d250a3ceb414de9e441c}
+      \strng{authorbibnamehash}{e08d7159ecb9d250a3ceb414de9e441c}
+      \strng{authornamehash}{4116765abf3984e5b42108b790c0e6a6}
+      \strng{authorfullhash}{3b0ac6ad8846f473912de8b110d2aa33}
+      \strng{authorfullhashraw}{3b0ac6ad8846f473912de8b110d2aa33}
+      \strng{nameabibnamehash}{e08d7159ecb9d250a3ceb414de9e441c}
+      \strng{nameanamehash}{4116765abf3984e5b42108b790c0e6a6}
+      \strng{nameafullhash}{3b0ac6ad8846f473912de8b110d2aa33}
+      \strng{nameafullhashraw}{3b0ac6ad8846f473912de8b110d2aa33}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE/ASME Transactions on Mechatronics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{M-TRAN: Self-Reconfigurable Modular Robotic System}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{7}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{431\bibrangedash 441}
+      \range{pages}{11}
+      \keyw{murata2002mtran}
+    \endentry
+    \entry{yim2007modular}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=3e097fdd54c521b3b8f2321bd045bd74}{%
+           family={Yim},
+           familyi={Y\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=792835d5674032bf8523050f5c113bea}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Wei-Min},
+           giveni={W\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=4d32626535c893eb6b0f48d8320f4ed9}{%
+           family={Salemi},
+           familyi={S\bibinitperiod},
+           given={Behnam},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f74192f92945701041a41bfa429ee111}{%
+           family={Rus},
+           familyi={R\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1083ee0c7fe17d1d6ed04f2481a027fe}{%
+           family={Moll},
+           familyi={M\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=475bdf26aafc86ddd3f62a8ff9267f8a}{%
+           family={Lipson},
+           familyi={L\bibinitperiod},
+           given={Hod},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ff389ecdbdfc5e473309c319939313c6}{%
+           family={Klavins},
+           familyi={K\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0bb4fe91e5d0c99f7ecf93d5e8c0ca09}{%
+           family={Chirikjian},
+           familyi={C\bibinitperiod},
+           given={Gregory\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{namea}{8}{}{%
+        {{hash=3e097fdd54c521b3b8f2321bd045bd74}{%
+           family={Yim},
+           familyi={Y\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=792835d5674032bf8523050f5c113bea}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Wei-Min},
+           giveni={W\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=4d32626535c893eb6b0f48d8320f4ed9}{%
+           family={Salemi},
+           familyi={S\bibinitperiod},
+           given={Behnam},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f74192f92945701041a41bfa429ee111}{%
+           family={Rus},
+           familyi={R\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1083ee0c7fe17d1d6ed04f2481a027fe}{%
+           family={Moll},
+           familyi={M\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=475bdf26aafc86ddd3f62a8ff9267f8a}{%
+           family={Lipson},
+           familyi={L\bibinitperiod},
+           given={Hod},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ff389ecdbdfc5e473309c319939313c6}{%
+           family={Klavins},
+           familyi={K\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0bb4fe91e5d0c99f7ecf93d5e8c0ca09}{%
+           family={Chirikjian},
+           familyi={C\bibinitperiod},
+           given={Gregory\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c4dced0426f772906c2fd72088c0c1ef}
+      \strng{fullhash}{f70b60c7cb7e9bf57e762019b4498796}
+      \strng{fullhashraw}{f70b60c7cb7e9bf57e762019b4498796}
+      \strng{bibnamehash}{6129d66983a84e034c263b6471bb4271}
+      \strng{authorbibnamehash}{6129d66983a84e034c263b6471bb4271}
+      \strng{authornamehash}{c4dced0426f772906c2fd72088c0c1ef}
+      \strng{authorfullhash}{f70b60c7cb7e9bf57e762019b4498796}
+      \strng{authorfullhashraw}{f70b60c7cb7e9bf57e762019b4498796}
+      \strng{nameabibnamehash}{6129d66983a84e034c263b6471bb4271}
+      \strng{nameanamehash}{c4dced0426f772906c2fd72088c0c1ef}
+      \strng{nameafullhash}{f70b60c7cb7e9bf57e762019b4498796}
+      \strng{nameafullhashraw}{f70b60c7cb7e9bf57e762019b4498796}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics \& Automation Magazine}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Modular Self-Reconfigurable Robot Systems}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{14}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{43\bibrangedash 52}
+      \range{pages}{10}
+      \keyw{yim2007modular}
+    \endentry
+    \entry{murata2007self}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c1c07eb681823c034499a57d39130bda}{%
+           family={Murata},
+           familyi={M\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=47af98f97c2e41a557d789d6f5a9c578}{%
+           family={Kurokawa},
+           familyi={K\bibinitperiod},
+           given={Haruhisa},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=c1c07eb681823c034499a57d39130bda}{%
+           family={Murata},
+           familyi={M\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=47af98f97c2e41a557d789d6f5a9c578}{%
+           family={Kurokawa},
+           familyi={K\bibinitperiod},
+           given={Haruhisa},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{4116765abf3984e5b42108b790c0e6a6}
+      \strng{fullhash}{e12de1ea44662b6203b7e714f87a4489}
+      \strng{fullhashraw}{e12de1ea44662b6203b7e714f87a4489}
+      \strng{bibnamehash}{e12de1ea44662b6203b7e714f87a4489}
+      \strng{authorbibnamehash}{e12de1ea44662b6203b7e714f87a4489}
+      \strng{authornamehash}{4116765abf3984e5b42108b790c0e6a6}
+      \strng{authorfullhash}{e12de1ea44662b6203b7e714f87a4489}
+      \strng{authorfullhashraw}{e12de1ea44662b6203b7e714f87a4489}
+      \strng{nameabibnamehash}{e12de1ea44662b6203b7e714f87a4489}
+      \strng{nameanamehash}{4116765abf3984e5b42108b790c0e6a6}
+      \strng{nameafullhash}{e12de1ea44662b6203b7e714f87a4489}
+      \strng{nameafullhashraw}{e12de1ea44662b6203b7e714f87a4489}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics \& Automation Magazine}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Self-Reconfigurable Robots}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{14}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{71\bibrangedash 78}
+      \range{pages}{8}
+      \keyw{murata2007self}
+    \endentry
+    \entry{castano2000conro}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=f585a88417e3649be2d6b16922b3427d}{%
+           family={Castano},
+           familyi={C\bibinitperiod},
+           given={Andres},
+           giveni={A\bibinitperiod}}}%
+        {{hash=792835d5674032bf8523050f5c113bea}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Wei-Min},
+           giveni={W\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=3e0aa78c712fea3e655889c0a7eb27e4}{%
+           family={Will},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=f585a88417e3649be2d6b16922b3427d}{%
+           family={Castano},
+           familyi={C\bibinitperiod},
+           given={Andres},
+           giveni={A\bibinitperiod}}}%
+        {{hash=792835d5674032bf8523050f5c113bea}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Wei-Min},
+           giveni={W\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=3e0aa78c712fea3e655889c0a7eb27e4}{%
+           family={Will},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{77b43f8729991c687e12a9bcef57bdcb}
+      \strng{fullhash}{fb9d7b669d49beb2a1d5d7a40e63c604}
+      \strng{fullhashraw}{fb9d7b669d49beb2a1d5d7a40e63c604}
+      \strng{bibnamehash}{fb9d7b669d49beb2a1d5d7a40e63c604}
+      \strng{authorbibnamehash}{fb9d7b669d49beb2a1d5d7a40e63c604}
+      \strng{authornamehash}{77b43f8729991c687e12a9bcef57bdcb}
+      \strng{authorfullhash}{fb9d7b669d49beb2a1d5d7a40e63c604}
+      \strng{authorfullhashraw}{fb9d7b669d49beb2a1d5d7a40e63c604}
+      \strng{nameabibnamehash}{fb9d7b669d49beb2a1d5d7a40e63c604}
+      \strng{nameanamehash}{77b43f8729991c687e12a9bcef57bdcb}
+      \strng{nameafullhash}{fb9d7b669d49beb2a1d5d7a40e63c604}
+      \strng{nameafullhashraw}{fb9d7b669d49beb2a1d5d7a40e63c604}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Autonomous Robots}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{CONRO: Towards Deployable Robots with Inter-Robots Metamorphic Capabilities}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{8}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{309\bibrangedash 324}
+      \range{pages}{16}
+      \keyw{castano2000conro}
+    \endentry
+    \entry{salemi2006superbot}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=4d32626535c893eb6b0f48d8320f4ed9}{%
+           family={Salemi},
+           familyi={S\bibinitperiod},
+           given={Behnam},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1083ee0c7fe17d1d6ed04f2481a027fe}{%
+           family={Moll},
+           familyi={M\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=792835d5674032bf8523050f5c113bea}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Wei-Min},
+           giveni={W\bibinithyphendelim M\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=4d32626535c893eb6b0f48d8320f4ed9}{%
+           family={Salemi},
+           familyi={S\bibinitperiod},
+           given={Behnam},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1083ee0c7fe17d1d6ed04f2481a027fe}{%
+           family={Moll},
+           familyi={M\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=792835d5674032bf8523050f5c113bea}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Wei-Min},
+           giveni={W\bibinithyphendelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Beijing, China}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a92a3fa132bfbbdb441fdbbbcecb5b7c}
+      \strng{fullhash}{f3079e0363f9e583b2ee3eb71b3e00cb}
+      \strng{fullhashraw}{f3079e0363f9e583b2ee3eb71b3e00cb}
+      \strng{bibnamehash}{f3079e0363f9e583b2ee3eb71b3e00cb}
+      \strng{authorbibnamehash}{f3079e0363f9e583b2ee3eb71b3e00cb}
+      \strng{authornamehash}{a92a3fa132bfbbdb441fdbbbcecb5b7c}
+      \strng{authorfullhash}{f3079e0363f9e583b2ee3eb71b3e00cb}
+      \strng{authorfullhashraw}{f3079e0363f9e583b2ee3eb71b3e00cb}
+      \strng{nameabibnamehash}{f3079e0363f9e583b2ee3eb71b3e00cb}
+      \strng{nameanamehash}{a92a3fa132bfbbdb441fdbbbcecb5b7c}
+      \strng{nameafullhash}{f3079e0363f9e583b2ee3eb71b3e00cb}
+      \strng{nameafullhashraw}{f3079e0363f9e583b2ee3eb71b3e00cb}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{SUPERBOT: A Deployable, Multi-Functional, and Modular Self-Reconfigurable Robotic System}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{3636\bibrangedash 3641}
+      \range{pages}{6}
+      \keyw{salemi2006superbot}
+    \endentry
+    \entry{chennareddy2017modular}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ca9ad472ee26899fe7142a78fcaced99}{%
+           family={Chennareddy},
+           familyi={C\bibinitperiod},
+           given={Sasanka\bibnamedelimb S.\bibnamedelimi R.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c98c5f368de94832d3f9d8decc6bcb2e}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Abhinav},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e467ae1df3dfa9bf04eb99d9a30269fc}{%
+           family={Karuppiah},
+           familyi={K\bibinitperiod},
+           given={Arunkumar},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=ca9ad472ee26899fe7142a78fcaced99}{%
+           family={Chennareddy},
+           familyi={C\bibinitperiod},
+           given={Sasanka\bibnamedelimb S.\bibnamedelimi R.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c98c5f368de94832d3f9d8decc6bcb2e}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Abhinav},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e467ae1df3dfa9bf04eb99d9a30269fc}{%
+           family={Karuppiah},
+           familyi={K\bibinitperiod},
+           given={Arunkumar},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{1b24c121429d0b16b1b890eb68b9cf1a}
+      \strng{fullhash}{6080a7a3caa946aeed35d082b3e5df88}
+      \strng{fullhashraw}{6080a7a3caa946aeed35d082b3e5df88}
+      \strng{bibnamehash}{6080a7a3caa946aeed35d082b3e5df88}
+      \strng{authorbibnamehash}{6080a7a3caa946aeed35d082b3e5df88}
+      \strng{authornamehash}{1b24c121429d0b16b1b890eb68b9cf1a}
+      \strng{authorfullhash}{6080a7a3caa946aeed35d082b3e5df88}
+      \strng{authorfullhashraw}{6080a7a3caa946aeed35d082b3e5df88}
+      \strng{nameabibnamehash}{6080a7a3caa946aeed35d082b3e5df88}
+      \strng{nameanamehash}{1b24c121429d0b16b1b890eb68b9cf1a}
+      \strng{nameafullhash}{6080a7a3caa946aeed35d082b3e5df88}
+      \strng{nameafullhashraw}{6080a7a3caa946aeed35d082b3e5df88}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Robotics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Modular Self-Reconfigurable Robotic Systems: A Survey on Hardware Architectures}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{5013532}
+      \range{pages}{1}
+      \keyw{chennareddy2017modular}
+    \endentry
+    \entry{geilinger2020computational}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=690f443c250887116560dc0d5d0d75a8}{%
+           family={Geilinger},
+           familyi={G\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f444fbfe167aaeee29c890cc41e6cf9b}{%
+           family={Winberg},
+           familyi={W\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=13225ed6e7e48d736b22bcd6564ee228}{%
+           family={Coros},
+           familyi={C\bibinitperiod},
+           given={Stelian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=690f443c250887116560dc0d5d0d75a8}{%
+           family={Geilinger},
+           familyi={G\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f444fbfe167aaeee29c890cc41e6cf9b}{%
+           family={Winberg},
+           familyi={W\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=13225ed6e7e48d736b22bcd6564ee228}{%
+           family={Coros},
+           familyi={C\bibinitperiod},
+           given={Stelian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{66866d379112732f55944782c94451f0}
+      \strng{fullhash}{1aa10917aad50df7424d7f026923f416}
+      \strng{fullhashraw}{1aa10917aad50df7424d7f026923f416}
+      \strng{bibnamehash}{1aa10917aad50df7424d7f026923f416}
+      \strng{authorbibnamehash}{1aa10917aad50df7424d7f026923f416}
+      \strng{authornamehash}{66866d379112732f55944782c94451f0}
+      \strng{authorfullhash}{1aa10917aad50df7424d7f026923f416}
+      \strng{authorfullhashraw}{1aa10917aad50df7424d7f026923f416}
+      \strng{nameabibnamehash}{1aa10917aad50df7424d7f026923f416}
+      \strng{nameanamehash}{66866d379112732f55944782c94451f0}
+      \strng{nameafullhash}{1aa10917aad50df7424d7f026923f416}
+      \strng{nameafullhashraw}{1aa10917aad50df7424d7f026923f416}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics and Automation Letters}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{A Computational Framework for Designing Skilled Legged-Wheeled Robots}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{5}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{3674\bibrangedash 3681}
+      \range{pages}{8}
+      \keyw{geilinger2020computational}
+    \endentry
+    \entry{raibert1986legged}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e3a6d1fa7658c92031b383b683d5d6d8}{%
+           family={Raibert},
+           familyi={R\bibinitperiod},
+           given={Marc\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=e3a6d1fa7658c92031b383b683d5d6d8}{%
+           family={Raibert},
+           familyi={R\bibinitperiod},
+           given={Marc\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{fullhash}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{fullhashraw}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{bibnamehash}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{authorbibnamehash}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{authornamehash}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{authorfullhash}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{authorfullhashraw}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{nameabibnamehash}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{nameanamehash}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{nameafullhash}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \strng{nameafullhashraw}{e3a6d1fa7658c92031b383b683d5d6d8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Legged Robots That Balance}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \keyw{raibert1986legged}
+    \endentry
+    \entry{pratt2001virtual}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=7aada8d85f6ca72305930b4e798a6c15}{%
+           family={Pratt},
+           familyi={P\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a8e1073ceaa979aa9658808a20b78255}{%
+           family={Chew},
+           familyi={C\bibinitperiod},
+           given={Chee-Meng},
+           giveni={C\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=980a77b6eac824b39e4548ad0feb46b9}{%
+           family={Torres},
+           familyi={T\bibinitperiod},
+           given={Andres},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0ff5dac24ce9785786bc2fbafcb8b5dc}{%
+           family={Dilworth},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=721775fe9fd93d36078948d4688c587f}{%
+           family={Pratt},
+           familyi={P\bibinitperiod},
+           given={Gill},
+           giveni={G\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=7aada8d85f6ca72305930b4e798a6c15}{%
+           family={Pratt},
+           familyi={P\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a8e1073ceaa979aa9658808a20b78255}{%
+           family={Chew},
+           familyi={C\bibinitperiod},
+           given={Chee-Meng},
+           giveni={C\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=980a77b6eac824b39e4548ad0feb46b9}{%
+           family={Torres},
+           familyi={T\bibinitperiod},
+           given={Andres},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0ff5dac24ce9785786bc2fbafcb8b5dc}{%
+           family={Dilworth},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=721775fe9fd93d36078948d4688c587f}{%
+           family={Pratt},
+           familyi={P\bibinitperiod},
+           given={Gill},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e710f39a17a61ff4b205b779b10d6590}
+      \strng{fullhash}{fa1cad0ab73ede267ab8a4bdc49b9f72}
+      \strng{fullhashraw}{fa1cad0ab73ede267ab8a4bdc49b9f72}
+      \strng{bibnamehash}{535f0bdef7a8f0cef6d09588deb2a370}
+      \strng{authorbibnamehash}{535f0bdef7a8f0cef6d09588deb2a370}
+      \strng{authornamehash}{e710f39a17a61ff4b205b779b10d6590}
+      \strng{authorfullhash}{fa1cad0ab73ede267ab8a4bdc49b9f72}
+      \strng{authorfullhashraw}{fa1cad0ab73ede267ab8a4bdc49b9f72}
+      \strng{nameabibnamehash}{535f0bdef7a8f0cef6d09588deb2a370}
+      \strng{nameanamehash}{e710f39a17a61ff4b205b779b10d6590}
+      \strng{nameafullhash}{fa1cad0ab73ede267ab8a4bdc49b9f72}
+      \strng{nameafullhashraw}{fa1cad0ab73ede267ab8a4bdc49b9f72}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The International Journal of Robotics Research}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Virtual Model Control: An Intuitive Approach for Bipedal Locomotion}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{20}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{129\bibrangedash 143}
+      \range{pages}{15}
+      \keyw{pratt2001virtual}
+    \endentry
+    \entry{anderson1990optimal}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=e8a4070f47356ebf747da5eda23eeddd}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Brian\bibnamedelimb D.\bibnamedelimi O.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=bbea45ab22a78e30e4e69092fcc7fc8e}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=e8a4070f47356ebf747da5eda23eeddd}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Brian\bibnamedelimb D.\bibnamedelimi O.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=bbea45ab22a78e30e4e69092fcc7fc8e}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Englewood Cliffs}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{6fe817fa4a735f0914f85852001fec73}
+      \strng{fullhash}{1ef02e6b159f968dcf47826645f9c386}
+      \strng{fullhashraw}{1ef02e6b159f968dcf47826645f9c386}
+      \strng{bibnamehash}{1ef02e6b159f968dcf47826645f9c386}
+      \strng{authorbibnamehash}{1ef02e6b159f968dcf47826645f9c386}
+      \strng{authornamehash}{6fe817fa4a735f0914f85852001fec73}
+      \strng{authorfullhash}{1ef02e6b159f968dcf47826645f9c386}
+      \strng{authorfullhashraw}{1ef02e6b159f968dcf47826645f9c386}
+      \strng{nameabibnamehash}{1ef02e6b159f968dcf47826645f9c386}
+      \strng{nameanamehash}{6fe817fa4a735f0914f85852001fec73}
+      \strng{nameafullhash}{1ef02e6b159f968dcf47826645f9c386}
+      \strng{nameafullhashraw}{1ef02e6b159f968dcf47826645f9c386}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Optimal Control: Linear Quadratic Methods}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1990}
+      \field{dateera}{ce}
+      \keyw{anderson1990optimal}
+    \endentry
+    \entry{kirk1970optimal}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=88447deae4ccafc0ee52201b7c44c2e2}{%
+           family={Kirk},
+           familyi={K\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=88447deae4ccafc0ee52201b7c44c2e2}{%
+           family={Kirk},
+           familyi={K\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Englewood Cliffs}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{fullhash}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{fullhashraw}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{bibnamehash}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{authorbibnamehash}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{authornamehash}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{authorfullhash}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{authorfullhashraw}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{nameabibnamehash}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{nameanamehash}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{nameafullhash}{88447deae4ccafc0ee52201b7c44c2e2}
+      \strng{nameafullhashraw}{88447deae4ccafc0ee52201b7c44c2e2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Optimal Control Theory: An Introduction}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1970}
+      \field{dateera}{ce}
+      \keyw{kirk1970optimal}
+    \endentry
+    \entry{ren2007information}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=79312c25841a4f2341e462020d563806}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=31202dc567c14cdad27077b94672f7ea}{%
+           family={Beard},
+           familyi={B\bibinitperiod},
+           given={Randal\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=646b4362fe7cf0460a0231cfc6305f9d}{%
+           family={Atkins},
+           familyi={A\bibinitperiod},
+           given={Ella\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=79312c25841a4f2341e462020d563806}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=31202dc567c14cdad27077b94672f7ea}{%
+           family={Beard},
+           familyi={B\bibinitperiod},
+           given={Randal\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=646b4362fe7cf0460a0231cfc6305f9d}{%
+           family={Atkins},
+           familyi={A\bibinitperiod},
+           given={Ella\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{ecf5a0665e365383c0285afd901faa2a}
+      \strng{fullhash}{defdfd79c17874c66720e1c960bf2251}
+      \strng{fullhashraw}{defdfd79c17874c66720e1c960bf2251}
+      \strng{bibnamehash}{defdfd79c17874c66720e1c960bf2251}
+      \strng{authorbibnamehash}{defdfd79c17874c66720e1c960bf2251}
+      \strng{authornamehash}{ecf5a0665e365383c0285afd901faa2a}
+      \strng{authorfullhash}{defdfd79c17874c66720e1c960bf2251}
+      \strng{authorfullhashraw}{defdfd79c17874c66720e1c960bf2251}
+      \strng{nameabibnamehash}{defdfd79c17874c66720e1c960bf2251}
+      \strng{nameanamehash}{ecf5a0665e365383c0285afd901faa2a}
+      \strng{nameafullhash}{defdfd79c17874c66720e1c960bf2251}
+      \strng{nameafullhashraw}{defdfd79c17874c66720e1c960bf2251}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Control Systems Magazine}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Information Consensus in Multivehicle Cooperative Control}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{27}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{71\bibrangedash 82}
+      \range{pages}{12}
+      \keyw{ren2007information}
+    \endentry
+    \entry{olfati2007consensus}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=f7b28f3352eaacebbbc56b73db55a6ea}{%
+           family={Olfati-Saber},
+           familyi={O\bibinithyphendelim S\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c21889c777c1ea892bfbef1b1627bb23}{%
+           family={Fax},
+           familyi={F\bibinitperiod},
+           given={J.\bibnamedelimi Alex},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=22ec7dc3434ec7866e28d570204999f8}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=f7b28f3352eaacebbbc56b73db55a6ea}{%
+           family={Olfati-Saber},
+           familyi={O\bibinithyphendelim S\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c21889c777c1ea892bfbef1b1627bb23}{%
+           family={Fax},
+           familyi={F\bibinitperiod},
+           given={J.\bibnamedelimi Alex},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=22ec7dc3434ec7866e28d570204999f8}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{882abf172b63cd5d529d08912ac17a10}
+      \strng{fullhash}{c3b1f274a989344e36401edb5ffc4e59}
+      \strng{fullhashraw}{c3b1f274a989344e36401edb5ffc4e59}
+      \strng{bibnamehash}{c3b1f274a989344e36401edb5ffc4e59}
+      \strng{authorbibnamehash}{c3b1f274a989344e36401edb5ffc4e59}
+      \strng{authornamehash}{882abf172b63cd5d529d08912ac17a10}
+      \strng{authorfullhash}{c3b1f274a989344e36401edb5ffc4e59}
+      \strng{authorfullhashraw}{c3b1f274a989344e36401edb5ffc4e59}
+      \strng{nameabibnamehash}{c3b1f274a989344e36401edb5ffc4e59}
+      \strng{nameanamehash}{882abf172b63cd5d529d08912ac17a10}
+      \strng{nameafullhash}{c3b1f274a989344e36401edb5ffc4e59}
+      \strng{nameafullhashraw}{c3b1f274a989344e36401edb5ffc4e59}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Consensus and Cooperation in Networked Multi-Agent Systems}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{95}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{215\bibrangedash 233}
+      \range{pages}{19}
+      \keyw{olfati2007consensus}
+    \endentry
+    \entry{ren2008distributed}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=79312c25841a4f2341e462020d563806}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=31202dc567c14cdad27077b94672f7ea}{%
+           family={Beard},
+           familyi={B\bibinitperiod},
+           given={Randal\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=79312c25841a4f2341e462020d563806}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=31202dc567c14cdad27077b94672f7ea}{%
+           family={Beard},
+           familyi={B\bibinitperiod},
+           given={Randal\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ecf5a0665e365383c0285afd901faa2a}
+      \strng{fullhash}{0f1ea4f9bd64938bd7b34308a3100bb0}
+      \strng{fullhashraw}{0f1ea4f9bd64938bd7b34308a3100bb0}
+      \strng{bibnamehash}{0f1ea4f9bd64938bd7b34308a3100bb0}
+      \strng{authorbibnamehash}{0f1ea4f9bd64938bd7b34308a3100bb0}
+      \strng{authornamehash}{ecf5a0665e365383c0285afd901faa2a}
+      \strng{authorfullhash}{0f1ea4f9bd64938bd7b34308a3100bb0}
+      \strng{authorfullhashraw}{0f1ea4f9bd64938bd7b34308a3100bb0}
+      \strng{nameabibnamehash}{0f1ea4f9bd64938bd7b34308a3100bb0}
+      \strng{nameanamehash}{ecf5a0665e365383c0285afd901faa2a}
+      \strng{nameafullhash}{0f1ea4f9bd64938bd7b34308a3100bb0}
+      \strng{nameafullhashraw}{0f1ea4f9bd64938bd7b34308a3100bb0}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Distributed Consensus in Multi-Vehicle Cooperative Control: Theory and Applications}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \keyw{ren2008distributed}
+    \endentry
+    \entry{liu2018survey}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ce084360cc68e7db4fe6cae1287b3adf}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=555cf9e8dc3079135c0c22423fc18336}{%
+           family={Bucknall},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=ce084360cc68e7db4fe6cae1287b3adf}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=555cf9e8dc3079135c0c22423fc18336}{%
+           family={Bucknall},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{0954792dbe24f33db81eda5a866f3dba}
+      \strng{fullhash}{900ea4809b28229f48d9f16f3b851bfa}
+      \strng{fullhashraw}{900ea4809b28229f48d9f16f3b851bfa}
+      \strng{bibnamehash}{900ea4809b28229f48d9f16f3b851bfa}
+      \strng{authorbibnamehash}{900ea4809b28229f48d9f16f3b851bfa}
+      \strng{authornamehash}{0954792dbe24f33db81eda5a866f3dba}
+      \strng{authorfullhash}{900ea4809b28229f48d9f16f3b851bfa}
+      \strng{authorfullhashraw}{900ea4809b28229f48d9f16f3b851bfa}
+      \strng{nameabibnamehash}{900ea4809b28229f48d9f16f3b851bfa}
+      \strng{nameanamehash}{0954792dbe24f33db81eda5a866f3dba}
+      \strng{nameafullhash}{900ea4809b28229f48d9f16f3b851bfa}
+      \strng{nameafullhashraw}{900ea4809b28229f48d9f16f3b851bfa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Robotica}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{7}
+      \field{title}{A Survey of Formation Control and Motion Planning of Multiple Unmanned Vehicles}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{36}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{1019\bibrangedash 1047}
+      \range{pages}{29}
+      \keyw{liu2018survey}
+    \endentry
+    \entry{murray1993nonholonomic}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=22ec7dc3434ec7866e28d570204999f8}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d756b35e7b530d260e5a0807d1953354}{%
+           family={Sastry},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi Shankar},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=22ec7dc3434ec7866e28d570204999f8}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d756b35e7b530d260e5a0807d1953354}{%
+           family={Sastry},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi Shankar},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{529bbbbb39cc19209adeb036ca10b6da}
+      \strng{fullhash}{cabca68bb1b421c8720cefa27adee925}
+      \strng{fullhashraw}{cabca68bb1b421c8720cefa27adee925}
+      \strng{bibnamehash}{cabca68bb1b421c8720cefa27adee925}
+      \strng{authorbibnamehash}{cabca68bb1b421c8720cefa27adee925}
+      \strng{authornamehash}{529bbbbb39cc19209adeb036ca10b6da}
+      \strng{authorfullhash}{cabca68bb1b421c8720cefa27adee925}
+      \strng{authorfullhashraw}{cabca68bb1b421c8720cefa27adee925}
+      \strng{nameabibnamehash}{cabca68bb1b421c8720cefa27adee925}
+      \strng{nameanamehash}{529bbbbb39cc19209adeb036ca10b6da}
+      \strng{nameafullhash}{cabca68bb1b421c8720cefa27adee925}
+      \strng{nameafullhashraw}{cabca68bb1b421c8720cefa27adee925}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Automatic Control}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{5}
+      \field{title}{Nonholonomic Motion Planning: Steering Using Sinusoids}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{38}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \field{pages}{700\bibrangedash 716}
+      \range{pages}{17}
+      \keyw{murray1993nonholonomic}
+    \endentry
+    \entry{campion1996structural}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=1e2bca9b2ad32cfc857638750a935e41}{%
+           family={Campion},
+           familyi={C\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a8e9a2252308cc76dac71519c685c3bf}{%
+           family={Bastin},
+           familyi={B\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+        {{hash=003b0103edbb884745f7a293ac0b9657}{%
+           family={D'Andrea-Novel},
+           familyi={D\bibinithyphendelim N\bibinitperiod},
+           given={Brigitte},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=1e2bca9b2ad32cfc857638750a935e41}{%
+           family={Campion},
+           familyi={C\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a8e9a2252308cc76dac71519c685c3bf}{%
+           family={Bastin},
+           familyi={B\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+        {{hash=003b0103edbb884745f7a293ac0b9657}{%
+           family={D'Andrea-Novel},
+           familyi={D\bibinithyphendelim N\bibinitperiod},
+           given={Brigitte},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c6eb47c96ba907297dbd51e6200d69a7}
+      \strng{fullhash}{78c662febc390a8d5e1b85cb4ab559fb}
+      \strng{fullhashraw}{78c662febc390a8d5e1b85cb4ab559fb}
+      \strng{bibnamehash}{78c662febc390a8d5e1b85cb4ab559fb}
+      \strng{authorbibnamehash}{78c662febc390a8d5e1b85cb4ab559fb}
+      \strng{authornamehash}{c6eb47c96ba907297dbd51e6200d69a7}
+      \strng{authorfullhash}{78c662febc390a8d5e1b85cb4ab559fb}
+      \strng{authorfullhashraw}{78c662febc390a8d5e1b85cb4ab559fb}
+      \strng{nameabibnamehash}{78c662febc390a8d5e1b85cb4ab559fb}
+      \strng{nameanamehash}{c6eb47c96ba907297dbd51e6200d69a7}
+      \strng{nameafullhash}{78c662febc390a8d5e1b85cb4ab559fb}
+      \strng{nameafullhashraw}{78c662febc390a8d5e1b85cb4ab559fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics and Automation}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Structural Properties and Classification of Kinematic and Dynamic Models of Wheeled Mobile Robots}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{12}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{pages}{47\bibrangedash 62}
+      \range{pages}{16}
+      \keyw{campion1996structural}
+    \endentry
+    \entry{laumond1998robot}{book}{}{}
+      \name{editor}{1}{}{%
+        {{hash=34c88d0fa3079484b33371ecc252c4ae}{%
+           family={Laumond},
+           familyi={L\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=34c88d0fa3079484b33371ecc252c4ae}{%
+           family={Laumond},
+           familyi={L\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{fullhash}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{fullhashraw}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{bibnamehash}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{editorbibnamehash}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{editornamehash}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{editorfullhash}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{editorfullhashraw}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{nameabibnamehash}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{nameanamehash}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{nameafullhash}{34c88d0fa3079484b33371ecc252c4ae}
+      \strng{nameafullhashraw}{34c88d0fa3079484b33371ecc252c4ae}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Robot Motion Planning and Control}
+      \field{usera}{M}
+      \field{userc}{english}
+      \field{userd}{english}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \keyw{laumond1998robot}
+    \endentry
+    \entry{lamiraux2001smooth}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=e912189b158ada9a5662c2620dc49b09}{%
+           family={Lamiraux},
+           familyi={L\bibinitperiod},
+           given={Florent},
+           giveni={F\bibinitperiod}}}%
+        {{hash=34c88d0fa3079484b33371ecc252c4ae}{%
+           family={Laumond},
+           familyi={L\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=e912189b158ada9a5662c2620dc49b09}{%
+           family={Lamiraux},
+           familyi={L\bibinitperiod},
+           given={Florent},
+           giveni={F\bibinitperiod}}}%
+        {{hash=34c88d0fa3079484b33371ecc252c4ae}{%
+           family={Laumond},
+           familyi={L\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{489da6a7b4ffd47df774b46d1158133e}
+      \strng{fullhash}{1106550c736702461b1ecc4af435b0ae}
+      \strng{fullhashraw}{1106550c736702461b1ecc4af435b0ae}
+      \strng{bibnamehash}{1106550c736702461b1ecc4af435b0ae}
+      \strng{authorbibnamehash}{1106550c736702461b1ecc4af435b0ae}
+      \strng{authornamehash}{489da6a7b4ffd47df774b46d1158133e}
+      \strng{authorfullhash}{1106550c736702461b1ecc4af435b0ae}
+      \strng{authorfullhashraw}{1106550c736702461b1ecc4af435b0ae}
+      \strng{nameabibnamehash}{1106550c736702461b1ecc4af435b0ae}
+      \strng{nameanamehash}{489da6a7b4ffd47df774b46d1158133e}
+      \strng{nameafullhash}{1106550c736702461b1ecc4af435b0ae}
+      \strng{nameafullhashraw}{1106550c736702461b1ecc4af435b0ae}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics and Automation}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Smooth Motion Planning for Car-Like Vehicles}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{17}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{498\bibrangedash 501}
+      \range{pages}{4}
+      \keyw{lamiraux2001smooth}
+    \endentry
+    \entry{camacho2007model}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=15ba64c29210ce6f6ade73c5d69ac3ae}{%
+           family={Camacho},
+           familyi={C\bibinitperiod},
+           given={Eduardo\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=afffb6ded8f4576b41f45b7e6998955e}{%
+           family={Bordons},
+           familyi={B\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=15ba64c29210ce6f6ade73c5d69ac3ae}{%
+           family={Camacho},
+           familyi={C\bibinitperiod},
+           given={Eduardo\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=afffb6ded8f4576b41f45b7e6998955e}{%
+           family={Bordons},
+           familyi={B\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{53c728956baf3eaa5403f5eb57470c63}
+      \strng{fullhash}{5acefe3acf95863766150a121e12e231}
+      \strng{fullhashraw}{5acefe3acf95863766150a121e12e231}
+      \strng{bibnamehash}{5acefe3acf95863766150a121e12e231}
+      \strng{authorbibnamehash}{5acefe3acf95863766150a121e12e231}
+      \strng{authornamehash}{53c728956baf3eaa5403f5eb57470c63}
+      \strng{authorfullhash}{5acefe3acf95863766150a121e12e231}
+      \strng{authorfullhashraw}{5acefe3acf95863766150a121e12e231}
+      \strng{nameabibnamehash}{5acefe3acf95863766150a121e12e231}
+      \strng{nameanamehash}{53c728956baf3eaa5403f5eb57470c63}
+      \strng{nameafullhash}{5acefe3acf95863766150a121e12e231}
+      \strng{nameafullhashraw}{5acefe3acf95863766150a121e12e231}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Model Predictive Control}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \keyw{camacho2007model}
+    \endentry
+    \entry{rawlings2017model}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=a28ab6b1da316879310a82410e4e8dc4}{%
+           family={Rawlings},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=6c38c35a89eea5106453dfc184f884e7}{%
+           family={Mayne},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima Q.},
+           giveni={D\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=ec732fd9120f390fd38c8132a3079900}{%
+           family={Diehl},
+           familyi={D\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=a28ab6b1da316879310a82410e4e8dc4}{%
+           family={Rawlings},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=6c38c35a89eea5106453dfc184f884e7}{%
+           family={Mayne},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima Q.},
+           giveni={D\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=ec732fd9120f390fd38c8132a3079900}{%
+           family={Diehl},
+           familyi={D\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Madison}%
+      }
+      \list{publisher}{1}{%
+        {Nob Hill Publishing}%
+      }
+      \strng{namehash}{852055c0c20f72f6bbd27807b33544ad}
+      \strng{fullhash}{35ab051db09ecee6480fd0b74ad2166f}
+      \strng{fullhashraw}{35ab051db09ecee6480fd0b74ad2166f}
+      \strng{bibnamehash}{35ab051db09ecee6480fd0b74ad2166f}
+      \strng{authorbibnamehash}{35ab051db09ecee6480fd0b74ad2166f}
+      \strng{authornamehash}{852055c0c20f72f6bbd27807b33544ad}
+      \strng{authorfullhash}{35ab051db09ecee6480fd0b74ad2166f}
+      \strng{authorfullhashraw}{35ab051db09ecee6480fd0b74ad2166f}
+      \strng{nameabibnamehash}{35ab051db09ecee6480fd0b74ad2166f}
+      \strng{nameanamehash}{852055c0c20f72f6bbd27807b33544ad}
+      \strng{nameafullhash}{35ab051db09ecee6480fd0b74ad2166f}
+      \strng{nameafullhashraw}{35ab051db09ecee6480fd0b74ad2166f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Model Predictive Control: Theory, Computation, and Design}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \keyw{rawlings2017model}
+    \endentry
+    \entry{mayne2000constrained}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=6c38c35a89eea5106453dfc184f884e7}{%
+           family={Mayne},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima Q.},
+           giveni={D\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=a28ab6b1da316879310a82410e4e8dc4}{%
+           family={Rawlings},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=962b275f0f4b7a93b0809f745064d5df}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Christopher\bibnamedelima V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=0764d63e7de8aa234aa67f74bc3cc1a0}{%
+           family={Scokaert},
+           familyi={S\bibinitperiod},
+           given={Pierre\bibnamedelimb O.\bibnamedelimi M.},
+           giveni={P\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=6c38c35a89eea5106453dfc184f884e7}{%
+           family={Mayne},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima Q.},
+           giveni={D\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=a28ab6b1da316879310a82410e4e8dc4}{%
+           family={Rawlings},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=962b275f0f4b7a93b0809f745064d5df}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Christopher\bibnamedelima V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=0764d63e7de8aa234aa67f74bc3cc1a0}{%
+           family={Scokaert},
+           familyi={S\bibinitperiod},
+           given={Pierre\bibnamedelimb O.\bibnamedelimi M.},
+           giveni={P\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{0863587215d328a6e40966e470cf86d7}
+      \strng{fullhash}{a4dbe939da5b63773b08da8455f48d80}
+      \strng{fullhashraw}{a4dbe939da5b63773b08da8455f48d80}
+      \strng{bibnamehash}{65453745eb962daaf36eca775735ed07}
+      \strng{authorbibnamehash}{65453745eb962daaf36eca775735ed07}
+      \strng{authornamehash}{0863587215d328a6e40966e470cf86d7}
+      \strng{authorfullhash}{a4dbe939da5b63773b08da8455f48d80}
+      \strng{authorfullhashraw}{a4dbe939da5b63773b08da8455f48d80}
+      \strng{nameabibnamehash}{65453745eb962daaf36eca775735ed07}
+      \strng{nameanamehash}{0863587215d328a6e40966e470cf86d7}
+      \strng{nameafullhash}{a4dbe939da5b63773b08da8455f48d80}
+      \strng{nameafullhashraw}{a4dbe939da5b63773b08da8455f48d80}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Automatica}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{Constrained Model Predictive Control: Stability and Optimality}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{36}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{789\bibrangedash 814}
+      \range{pages}{26}
+      \keyw{mayne2000constrained}
+    \endentry
+    \entry{dunbar2006distributed}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8b736d51b63e6e8dd7554ef598a2dcc7}{%
+           family={Dunbar},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima B.},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=22ec7dc3434ec7866e28d570204999f8}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=8b736d51b63e6e8dd7554ef598a2dcc7}{%
+           family={Dunbar},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima B.},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=22ec7dc3434ec7866e28d570204999f8}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{46c6f4e315f67d61cb241bbb3124ea20}
+      \strng{fullhash}{823027e659afd1ebf8e02cdd4fafa12c}
+      \strng{fullhashraw}{823027e659afd1ebf8e02cdd4fafa12c}
+      \strng{bibnamehash}{823027e659afd1ebf8e02cdd4fafa12c}
+      \strng{authorbibnamehash}{823027e659afd1ebf8e02cdd4fafa12c}
+      \strng{authornamehash}{46c6f4e315f67d61cb241bbb3124ea20}
+      \strng{authorfullhash}{823027e659afd1ebf8e02cdd4fafa12c}
+      \strng{authorfullhashraw}{823027e659afd1ebf8e02cdd4fafa12c}
+      \strng{nameabibnamehash}{823027e659afd1ebf8e02cdd4fafa12c}
+      \strng{nameanamehash}{46c6f4e315f67d61cb241bbb3124ea20}
+      \strng{nameafullhash}{823027e659afd1ebf8e02cdd4fafa12c}
+      \strng{nameafullhashraw}{823027e659afd1ebf8e02cdd4fafa12c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Automatica}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Distributed Receding Horizon Control for Multi-Vehicle Formation Stabilization}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{42}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{549\bibrangedash 558}
+      \range{pages}{10}
+      \keyw{dunbar2006distributed}
+    \endentry
+    \entry{christofides2013distributed}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=fc471541293715551aa11c3f9fa32046}{%
+           family={Christofides},
+           familyi={C\bibinitperiod},
+           given={Panagiotis\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=9099123c0761884b5da3d31fb8050b20}{%
+           family={Scattolini},
+           familyi={S\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5891cc93d5744f4e674bb5801040f7d7}{%
+           family={Peña},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima Muñoz},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={de\bibnamedelima la},
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+        {{hash=b9b82cebc2f44820a25db204aead0230}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jinfeng},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=fc471541293715551aa11c3f9fa32046}{%
+           family={Christofides},
+           familyi={C\bibinitperiod},
+           given={Panagiotis\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=9099123c0761884b5da3d31fb8050b20}{%
+           family={Scattolini},
+           familyi={S\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5891cc93d5744f4e674bb5801040f7d7}{%
+           family={Peña},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima Muñoz},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={de\bibnamedelima la},
+           prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+        {{hash=b9b82cebc2f44820a25db204aead0230}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jinfeng},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{32372d3dac3297021e4a8d96fc9e00a6}
+      \strng{fullhash}{c884ca0925f69d7be5e64933ba747cad}
+      \strng{fullhashraw}{c884ca0925f69d7be5e64933ba747cad}
+      \strng{bibnamehash}{4a3df1fd55580e3f4090af956253c240}
+      \strng{authorbibnamehash}{4a3df1fd55580e3f4090af956253c240}
+      \strng{authornamehash}{32372d3dac3297021e4a8d96fc9e00a6}
+      \strng{authorfullhash}{c884ca0925f69d7be5e64933ba747cad}
+      \strng{authorfullhashraw}{c884ca0925f69d7be5e64933ba747cad}
+      \strng{nameabibnamehash}{4a3df1fd55580e3f4090af956253c240}
+      \strng{nameanamehash}{32372d3dac3297021e4a8d96fc9e00a6}
+      \strng{nameafullhash}{c884ca0925f69d7be5e64933ba747cad}
+      \strng{nameafullhashraw}{c884ca0925f69d7be5e64933ba747cad}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Chemical Engineering}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Distributed Model Predictive Control: A Tutorial Review and Future Research Directions}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{51}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{21\bibrangedash 41}
+      \range{pages}{21}
+      \keyw{christofides2013distributed}
+    \endentry
+    \entry{farina2012distributed}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=716e9ff4ffa3dd73151aba7d1c7a0ffb}{%
+           family={Farina},
+           familyi={F\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d73e3e02c62edd5219eeadb4cff1bc02}{%
+           family={Giulioni},
+           familyi={G\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9099123c0761884b5da3d31fb8050b20}{%
+           family={Scattolini},
+           familyi={S\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=716e9ff4ffa3dd73151aba7d1c7a0ffb}{%
+           family={Farina},
+           familyi={F\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d73e3e02c62edd5219eeadb4cff1bc02}{%
+           family={Giulioni},
+           familyi={G\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9099123c0761884b5da3d31fb8050b20}{%
+           family={Scattolini},
+           familyi={S\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{f9148aa80d432398f900a1b4e8052a35}
+      \strng{fullhash}{ed246ecbceae6e0599b8b4035d8da9eb}
+      \strng{fullhashraw}{ed246ecbceae6e0599b8b4035d8da9eb}
+      \strng{bibnamehash}{ed246ecbceae6e0599b8b4035d8da9eb}
+      \strng{authorbibnamehash}{ed246ecbceae6e0599b8b4035d8da9eb}
+      \strng{authornamehash}{f9148aa80d432398f900a1b4e8052a35}
+      \strng{authorfullhash}{ed246ecbceae6e0599b8b4035d8da9eb}
+      \strng{authorfullhashraw}{ed246ecbceae6e0599b8b4035d8da9eb}
+      \strng{nameabibnamehash}{ed246ecbceae6e0599b8b4035d8da9eb}
+      \strng{nameanamehash}{f9148aa80d432398f900a1b4e8052a35}
+      \strng{nameafullhash}{ed246ecbceae6e0599b8b4035d8da9eb}
+      \strng{nameafullhashraw}{ed246ecbceae6e0599b8b4035d8da9eb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Automatica}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{Distributed Predictive Control: A Non-Cooperative Algorithm with Neighbor-to-Neighbor Communication for Linear Systems}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{48}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{1088\bibrangedash 1096}
+      \range{pages}{9}
+      \keyw{farina2012distributed}
+    \endentry
+    \entry{han2009pid}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a46a0a7b2a2a4838a1d5ceea8d804278}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Jingqing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=a46a0a7b2a2a4838a1d5ceea8d804278}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Jingqing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{fullhash}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{fullhashraw}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{bibnamehash}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{authorbibnamehash}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{authornamehash}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{authorfullhash}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{authorfullhashraw}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{nameabibnamehash}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{nameanamehash}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{nameafullhash}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \strng{nameafullhashraw}{a46a0a7b2a2a4838a1d5ceea8d804278}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Industrial Electronics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{From PID to Active Disturbance Rejection Control}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{56}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{900\bibrangedash 906}
+      \range{pages}{7}
+      \keyw{han2009pid}
+    \endentry
+    \entry{gao2003scaling}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=28611bd7f5889396ddc0294e16449590}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Zhiqiang},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=28611bd7f5889396ddc0294e16449590}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Zhiqiang},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Denver, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{28611bd7f5889396ddc0294e16449590}
+      \strng{fullhash}{28611bd7f5889396ddc0294e16449590}
+      \strng{fullhashraw}{28611bd7f5889396ddc0294e16449590}
+      \strng{bibnamehash}{28611bd7f5889396ddc0294e16449590}
+      \strng{authorbibnamehash}{28611bd7f5889396ddc0294e16449590}
+      \strng{authornamehash}{28611bd7f5889396ddc0294e16449590}
+      \strng{authorfullhash}{28611bd7f5889396ddc0294e16449590}
+      \strng{authorfullhashraw}{28611bd7f5889396ddc0294e16449590}
+      \strng{nameabibnamehash}{28611bd7f5889396ddc0294e16449590}
+      \strng{nameanamehash}{28611bd7f5889396ddc0294e16449590}
+      \strng{nameafullhash}{28611bd7f5889396ddc0294e16449590}
+      \strng{nameafullhashraw}{28611bd7f5889396ddc0294e16449590}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the American Control Conference}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Scaling and Bandwidth-Parameterization Based Controller Tuning}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{4989\bibrangedash 4996}
+      \range{pages}{8}
+      \keyw{gao2003scaling}
+    \endentry
+    \entry{huang2000analysis}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=cae9da35ae12a6cbd407d07b86b4e18c}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f2a88938c8dab16c585d12764cbed32f}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi Q.},
+           giveni={J\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=cae9da35ae12a6cbd407d07b86b4e18c}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f2a88938c8dab16c585d12764cbed32f}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi Q.},
+           giveni={J\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{163d2cf5fe8e59a79268f7871c4ee263}
+      \strng{fullhash}{9c5f5396c7baaacace5edc41b8b3ed3a}
+      \strng{fullhashraw}{9c5f5396c7baaacace5edc41b8b3ed3a}
+      \strng{bibnamehash}{9c5f5396c7baaacace5edc41b8b3ed3a}
+      \strng{authorbibnamehash}{9c5f5396c7baaacace5edc41b8b3ed3a}
+      \strng{authornamehash}{163d2cf5fe8e59a79268f7871c4ee263}
+      \strng{authorfullhash}{9c5f5396c7baaacace5edc41b8b3ed3a}
+      \strng{authorfullhashraw}{9c5f5396c7baaacace5edc41b8b3ed3a}
+      \strng{nameabibnamehash}{9c5f5396c7baaacace5edc41b8b3ed3a}
+      \strng{nameanamehash}{163d2cf5fe8e59a79268f7871c4ee263}
+      \strng{nameafullhash}{9c5f5396c7baaacace5edc41b8b3ed3a}
+      \strng{nameafullhashraw}{9c5f5396c7baaacace5edc41b8b3ed3a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chinese Science Bulletin}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{21}
+      \field{title}{Analysis and Design for Nonlinear Continuous Extended State Observer}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{45}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{1938\bibrangedash 1944}
+      \range{pages}{7}
+      \keyw{huang2000analysis}
+    \endentry
+    \entry{guo2016active}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=4109272ef97af7d3633f413abdd220e9}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Bao-Zhu},
+           giveni={B\bibinithyphendelim Z\bibinitperiod}}}%
+        {{hash=8935710cc9c25bb129d1e73b42011693}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zhi-Liang},
+           giveni={Z\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=4109272ef97af7d3633f413abdd220e9}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Bao-Zhu},
+           giveni={B\bibinithyphendelim Z\bibinitperiod}}}%
+        {{hash=8935710cc9c25bb129d1e73b42011693}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zhi-Liang},
+           giveni={Z\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{d0fa89be284a90dfdcc61bb9cea1ca7d}
+      \strng{fullhash}{24907cffa2eb351852ddfe80909afcbd}
+      \strng{fullhashraw}{24907cffa2eb351852ddfe80909afcbd}
+      \strng{bibnamehash}{24907cffa2eb351852ddfe80909afcbd}
+      \strng{authorbibnamehash}{24907cffa2eb351852ddfe80909afcbd}
+      \strng{authornamehash}{d0fa89be284a90dfdcc61bb9cea1ca7d}
+      \strng{authorfullhash}{24907cffa2eb351852ddfe80909afcbd}
+      \strng{authorfullhashraw}{24907cffa2eb351852ddfe80909afcbd}
+      \strng{nameabibnamehash}{24907cffa2eb351852ddfe80909afcbd}
+      \strng{nameanamehash}{d0fa89be284a90dfdcc61bb9cea1ca7d}
+      \strng{nameafullhash}{24907cffa2eb351852ddfe80909afcbd}
+      \strng{nameafullhashraw}{24907cffa2eb351852ddfe80909afcbd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Active Disturbance Rejection Control for Nonlinear Systems: An Introduction}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \keyw{guo2016active}
+    \endentry
+    \entry{sira2017active}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=7aa43580570e174e21bf17a5b6d42ae4}{%
+           family={Sira-Ramírez},
+           familyi={S\bibinithyphendelim R\bibinitperiod},
+           given={Hebertt},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bce60974f5b4b7636bc5e3e170f9f771}{%
+           family={Luviano-Juárez},
+           familyi={L\bibinithyphendelim J\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=293db74e609a3470477565ee52eec0ec}{%
+           family={Ramírez-Neria},
+           familyi={R\bibinithyphendelim N\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ebf65e121c17b93e5f7484e8c31834a5}{%
+           family={Zurita-Bustamante},
+           familyi={Z\bibinithyphendelim B\bibinitperiod},
+           given={Ernesto\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=7aa43580570e174e21bf17a5b6d42ae4}{%
+           family={Sira-Ramírez},
+           familyi={S\bibinithyphendelim R\bibinitperiod},
+           given={Hebertt},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bce60974f5b4b7636bc5e3e170f9f771}{%
+           family={Luviano-Juárez},
+           familyi={L\bibinithyphendelim J\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=293db74e609a3470477565ee52eec0ec}{%
+           family={Ramírez-Neria},
+           familyi={R\bibinithyphendelim N\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ebf65e121c17b93e5f7484e8c31834a5}{%
+           family={Zurita-Bustamante},
+           familyi={Z\bibinithyphendelim B\bibinitperiod},
+           given={Ernesto\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Butterworth-Heinemann}%
+      }
+      \strng{namehash}{edd6ac44dd212adf926a2be23699fa5a}
+      \strng{fullhash}{741a5e70a5d8e6e7622edd475f2d20bc}
+      \strng{fullhashraw}{741a5e70a5d8e6e7622edd475f2d20bc}
+      \strng{bibnamehash}{05f7b71a17d38b0ac91f67147c053607}
+      \strng{authorbibnamehash}{05f7b71a17d38b0ac91f67147c053607}
+      \strng{authornamehash}{edd6ac44dd212adf926a2be23699fa5a}
+      \strng{authorfullhash}{741a5e70a5d8e6e7622edd475f2d20bc}
+      \strng{authorfullhashraw}{741a5e70a5d8e6e7622edd475f2d20bc}
+      \strng{nameabibnamehash}{05f7b71a17d38b0ac91f67147c053607}
+      \strng{nameanamehash}{edd6ac44dd212adf926a2be23699fa5a}
+      \strng{nameafullhash}{741a5e70a5d8e6e7622edd475f2d20bc}
+      \strng{nameafullhashraw}{741a5e70a5d8e6e7622edd475f2d20bc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Active Disturbance Rejection Control of Dynamic Systems: A Flatness Based Approach}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \keyw{sira2017active}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

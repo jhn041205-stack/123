@@ -1,0 +1,91 @@
+standard_robot_pp_ros1 UDP host interface description
+
+This file is intended for the host-side developer who needs to send commands to the robot and
+receive phi from the robot.
+
+1. Host -> Robot: variables the host must send
+
+Transport:
+- UDP
+- Default destination IP/port:
+  - IP: the IP of the ROS host running udp_command_receiver_node
+  - Port: 6000 by default, configured in config/real_vehicle_comm.yaml
+
+Required variables:
+- vx
+  Meaning: forward speed command
+  Unit: m/s
+- leg_length
+  Meaning: leg length command
+  Unit: m
+- wz
+  Meaning: yaw angular velocity command
+  Unit: rad/s
+
+Payload format:
+CMD,<vx>,<leg_length>,<wz>
+
+Also accepted:
+<vx>,<leg_length>,<wz>
+
+Examples:
+CMD,1.200000,0.180000,0.500000
+0.800000,0.160000,-0.300000
+
+Parsing rule:
+- Fields are separated by commas.
+- One UDP datagram must contain one complete command frame.
+- pitch and yaw are not provided by the host in this protocol.
+- After a valid command is received:
+  - cmd_vel.linear.x = vx
+  - cmd_vel.linear.y = 0
+  - cmd_vel.angular.z = wz
+  - cmd_leg_length.data = leg_length
+  - cmd_gimbal_joint.gimbal_pitch_joint = 0
+  - cmd_gimbal_joint.gimbal_yaw_joint = 0
+
+
+2. Robot -> Host: variables the host must receive
+
+Transport:
+- UDP
+- Default source node: imu_udp_sender_node
+- Default destination IP/port:
+  - IP: configured in config/real_vehicle_comm.yaml
+  - Port: 5000 by default
+- Default send rate: 50 Hz
+
+Provided variable:
+- phi
+  Meaning: yaw angle resolved from the IMU quaternion
+  Unit: rad
+
+Payload format:
+PHI,<timestamp_ms>,<phi_rad>
+
+Example:
+PHI,1773829000123,1.570796
+
+Field description:
+- timestamp_ms
+  Meaning: ROS timestamp converted to milliseconds
+- phi_rad
+  Meaning: resolved yaw angle
+  Unit: rad
+
+
+3. Communication behavior
+
+- udp_command_receiver_node uses blocking recvfrom().
+- The receive thread blocks until a UDP datagram arrives.
+- Once a valid command packet arrives, it is parsed immediately and published immediately.
+- imu_udp_sender_node sends phi periodically at 50 Hz by default.
+
+
+4. Recommended host implementation notes
+
+- Use plain text UTF-8 packets.
+- Do not combine multiple command frames into one UDP datagram.
+- Keep the decimal format simple, for example:
+  CMD,1.0,0.18,0.4
+- If continuous control is needed, send commands continuously at 20 Hz to 100 Hz.

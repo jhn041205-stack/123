@@ -1,0 +1,9 @@
+<launch>
+  <arg name="config_file" default="$(find standard_robot_pp_ros1)/config/real_vehicle_comm.yaml" />
+  <rosparam command="load" file="$(arg config_file)" />
+
+  <node pkg="standard_robot_pp_ros1"
+        type="standard_robot_pp_ros1_node"
+        name="standard_robot_pp_ros1"
+        output="screen" />
+</launch>

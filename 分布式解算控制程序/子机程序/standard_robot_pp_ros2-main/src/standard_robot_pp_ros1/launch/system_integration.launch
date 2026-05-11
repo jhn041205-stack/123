@@ -1,0 +1,40 @@
+<launch>
+  <arg name="use_serial_bridge" default="true" />
+  <arg name="use_fake_vehicle" default="false" />
+
+  <arg name="serial_config" default="$(find standard_robot_pp_ros1)/config/standard_robot_pp_ros1.yaml" />
+  <arg name="imu_udp_config" default="$(find standard_robot_pp_ros1)/config/imu_udp_sender.yaml" />
+  <arg name="udp_command_config" default="$(find standard_robot_pp_ros1)/config/udp_command_receiver.yaml" />
+
+  <arg name="fake_target_ip" default="127.0.0.1" />
+  <arg name="fake_target_port" default="5000" />
+  <arg name="fake_listen_ip" default="0.0.0.0" />
+  <arg name="fake_listen_port" default="6000" />
+  <arg name="fake_dt" default="0.02" />
+  <arg name="fake_print_hz" default="2.0" />
+
+  <group if="$(arg use_serial_bridge)">
+    <node pkg="standard_robot_pp_ros1"
+          type="standard_robot_pp_ros1_node"
+          name="standard_robot_pp_ros1"
+          output="screen">
+      <rosparam command="load" file="$(arg serial_config)" />
+    </node>
+  </group>
+
+  <node pkg="standard_robot_pp_ros1"
+        type="imu_udp_sender_node"
+        name="imu_udp_sender_node"
+        output="screen">
+    <rosparam command="load" file="$(arg imu_udp_config)" />
+  </node>
+
+  <node pkg="standard_robot_pp_ros1"
+        type="udp_command_receiver_node"
+        name="udp_command_receiver_node"
+        output="screen">
+    <rosparam command="load" file="$(arg udp_command_config)" />
+  </node>
+
+
+</launch>

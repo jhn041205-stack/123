@@ -1,0 +1,17 @@
+(cl:defpackage articulated_control-msg
+  (:use )
+  (:export
+   "<ARTICULATEDSTATE>"
+   "ARTICULATEDSTATE"
+   "<CONTROLSEQUENCEVW>"
+   "CONTROLSEQUENCEVW"
+   "<FLEETEXPECTEDSEQUENCE>"
+   "FLEETEXPECTEDSEQUENCE"
+   "<FLEETPHI>"
+   "FLEETPHI"
+   "<FLEETSTATE>"
+   "FLEETSTATE"
+   "<VEHICLESTATE>"
+   "VEHICLESTATE"
+  ))
+

@@ -1,0 +1,33 @@
+\input{images/control_diagrams/control_diagram_styles.tex}
+
+\begin{figure}[htbp]
+  \centering
+  \resizebox{0.98\textwidth}{!}{%
+  \begin{tikzpicture}
+    \node[ctrlBlock, minimum width=31mm] (mobile) at (0,0) {移动机器人\\平台需求};
+    \node[ctrlBlock, minimum width=31mm] (wheelleg) at (4.0,1.4) {轮足复合\\高效移动/越障};
+    \node[ctrlBlock, minimum width=31mm] (reconfig) at (4.0,0) {模块化自重构\\构型适应/冗余};
+    \node[ctrlBlock, minimum width=31mm] (multi) at (4.0,-1.4) {多机器人协同\\信息交互/分布式};
+
+    \node[ctrlBlock, minimum width=36mm] (target) at (8.4,0) {链式自重组\\轮足机器人系统};
+    \node[ctrlSmall, minimum width=25mm] (single) at (12.2,1.35) {单体平衡\\变腿长控制};
+    \node[ctrlSmall, minimum width=25mm] (chain) at (12.2,0) {铰接约束\\链式运动学};
+    \node[ctrlSmall, minimum width=25mm] (coop) at (12.2,-1.35) {分层协同\\DMPC/ADRC};
+
+    \draw[ctrlArrow] (mobile) -- (wheelleg);
+    \draw[ctrlArrow] (mobile) -- (reconfig);
+    \draw[ctrlArrow] (mobile) -- (multi);
+    \draw[ctrlArrow] (wheelleg) -- (target);
+    \draw[ctrlArrow] (reconfig) -- (target);
+    \draw[ctrlArrow] (multi) -- (target);
+    \draw[ctrlArrow] (target) -- (single);
+    \draw[ctrlArrow] (target) -- (chain);
+    \draw[ctrlArrow] (target) -- (coop);
+
+    \node[ctrlGroup, fit=(wheelleg)(reconfig)(multi), label={[font=\footnotesize]above:相关研究方向}] {};
+    \node[ctrlGroup, fit=(single)(chain)(coop), label={[font=\footnotesize]above:本文关注问题}] {};
+  \end{tikzpicture}
+  }%
+  \caption{链式自重组轮足机器人相关研究方向与本文问题定位}
+  \label{fig:ch1_research_landscape}
+\end{figure}

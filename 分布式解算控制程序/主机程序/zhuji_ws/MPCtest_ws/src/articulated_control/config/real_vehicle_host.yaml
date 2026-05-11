@@ -1,0 +1,15 @@
+vehicle:
+  n_vehicles: 1
+  L1: 0.9
+  L2: 0.4
+
+articulated_control:
+  dt: 0.02
+
+real_vehicle_central_controller:
+  leg_length: 0.18
+  max_supported_vehicles: 6
+  fleet_phi_topic: "/articulated_control/fleet_phi"
+  head_control_topic: "/articulated_vehicle/control_sequence"
+  head_leg_length_topic: "/articulated_control/head_leg_length"
+  expected_sequence_topic: "/articulated_control/fleet_expected_sequence"

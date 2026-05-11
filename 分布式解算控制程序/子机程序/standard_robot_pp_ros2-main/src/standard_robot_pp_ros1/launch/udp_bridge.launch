@@ -1,0 +1,15 @@
+<launch>
+  <node pkg="standard_robot_pp_ros1"
+        type="imu_udp_sender_node"
+        name="imu_udp_sender_node"
+        output="screen">
+    <rosparam command="load" file="$(find standard_robot_pp_ros1)/config/imu_udp_sender.yaml" />
+  </node>
+
+  <node pkg="standard_robot_pp_ros1"
+        type="udp_command_receiver_node"
+        name="udp_command_receiver_node"
+        output="screen">
+    <rosparam command="load" file="$(find standard_robot_pp_ros1)/config/udp_command_receiver.yaml" />
+  </node>
+</launch>

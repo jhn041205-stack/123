@@ -1,0 +1,707 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper,12pt]{ctexart}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+\geometry{margin=2.5cm}
+\setcounter{MaxMatrixCols}{20}
+
+\title{尾巴离地状态下的系统建模}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{尾巴离地状态下的系统建模}
+
+本文针对轮腿机器人尾巴离地工况建立动力学模型。该工况下，尾巴不与地面接触，因此尾巴不提供额外的地面支撑力，只通过尾电机安装点与机体发生动力学耦合。系统由机体、左右腿、左右轮以及尾巴组成。
+
+\subsection{广义坐标与控制输入}
+
+选取系统广义坐标为
+\begin{equation}
+    q =
+    \begin{bmatrix}
+        X_b^h & \phi & \theta_l & \theta_r & \theta_b & \theta_t
+    \end{bmatrix}^{\mathrm T},
+\end{equation}
+其中，$X_b^h$ 为机体水平方向位置，$\phi$ 为偏航角，$\theta_l$ 与 $\theta_r$ 分别为左右腿角度，$\theta_b$ 为机体俯仰角，$\theta_t$ 为尾巴角度。
+
+对应的广义速度和广义加速度分别为
+\begin{equation}
+    \dot q =
+    \begin{bmatrix}
+        \dot X_b^h & \dot \phi & \dot \theta_l & \dot \theta_r & \dot \theta_b & \dot \theta_t
+    \end{bmatrix}^{\mathrm T},
+\end{equation}
+\begin{equation}
+    \ddot q =
+    \begin{bmatrix}
+        \ddot X_b^h & \ddot \phi & \ddot \theta_l & \ddot \theta_r & \ddot \theta_b & \ddot \theta_t
+    \end{bmatrix}^{\mathrm T}.
+\end{equation}
+
+系统控制输入选为
+\begin{equation}
+    u =
+    \begin{bmatrix}
+        T_{r \to b} &
+        T_{l \to b} &
+        T_{wr \to r} &
+        T_{wl \to l} &
+        T_{t \to b}
+    \end{bmatrix}^{\mathrm T},
+\end{equation}
+其中，$T_{r \to b}$ 和 $T_{l \to b}$ 为左右腿对机体的驱动力矩，$T_{wr \to r}$ 和 $T_{wl \to l}$ 为左右轮对腿部的驱动力矩，$T_{t \to b}$ 为尾电机对机体的力矩。
+
+\subsection{尾巴运动学描述}
+
+设尾电机安装点相对机体质心的前向距离为 $a_{t,p}$，下向距离为 $b_{t,p}$，则安装点相对机体质心的位置可写为
+\begin{equation}
+    r_{bp}^h = a_{t,p}\cos\theta_b + b_{t,p}\sin\theta_b,
+\end{equation}
+\begin{equation}
+    r_{bp}^v = a_{t,p}\sin\theta_b - b_{t,p}\cos\theta_b.
+\end{equation}
+
+尾巴质心相对尾杆方向存在固定偏置角 $\delta_t$，因此定义尾巴质心方向角为
+\begin{equation}
+    \alpha_t = \theta_t - \theta_b + \delta_t.
+\end{equation}
+
+尾电机安装点的水平和竖直加速度分别为
+\begin{equation}
+    a_{tp}^h =
+    a_b^h
+    - \left(a_{t,p}\sin\theta_b - b_{t,p}\cos\theta_b\right)\ddot\theta_b
+    - \left(a_{t,p}\cos\theta_b + b_{t,p}\sin\theta_b\right)\dot\theta_b^2,
+\end{equation}
+\begin{equation}
+    a_{tp}^v =
+    a_b^v
+    + \left(a_{t,p}\cos\theta_b + b_{t,p}\sin\theta_b\right)\ddot\theta_b
+    - \left(a_{t,p}\sin\theta_b - b_{t,p}\cos\theta_b\right)\dot\theta_b^2.
+\end{equation}
+
+尾巴质心加速度为
+\begin{equation}
+    a_t^h =
+    a_{tp}^h
+    - l_{t,c}
+    \left[
+        \left(\ddot\theta_t - \ddot\theta_b\right)\sin\alpha_t
+        +
+        \left(\dot\theta_t - \dot\theta_b\right)^2\cos\alpha_t
+    \right],
+\end{equation}
+\begin{equation}
+    a_t^v =
+    a_{tp}^v
+    - l_{t,c}
+    \left[
+        \left(\ddot\theta_t - \ddot\theta_b\right)\cos\alpha_t
+        -
+        \left(\dot\theta_t - \dot\theta_b\right)^2\sin\alpha_t
+    \right],
+\end{equation}
+其中 $l_{t,c}$ 为尾电机安装点到尾巴质心的距离。
+
+\subsection{轮地运动学约束}
+
+在尾巴离地工况下，仍假设左右轮满足纯滚动约束和不离地约束，即
+\begin{equation}
+    a_{wr}^h = R\ddot\theta_{wr}, \qquad
+    a_{wl}^h = R\ddot\theta_{wl},
+\end{equation}
+\begin{equation}
+    a_{wr}^v = 0, \qquad a_{wl}^v = 0.
+\end{equation}
+
+右腿转轴加速度为
+\begin{equation}
+    a_r^h =
+    R\ddot\theta_{wr}
+    + l_r\cos\theta_r \ddot\theta_r
+    - l_r\sin\theta_r \dot\theta_r^2,
+\end{equation}
+\begin{equation}
+    a_r^v =
+    - l_r\sin\theta_r \ddot\theta_r
+    - l_r\cos\theta_r \dot\theta_r^2.
+\end{equation}
+
+左腿转轴加速度为
+\begin{equation}
+    a_l^h =
+    R\ddot\theta_{wl}
+    + l_l\cos\theta_l \ddot\theta_l
+    - l_l\sin\theta_l \dot\theta_l^2,
+\end{equation}
+\begin{equation}
+    a_l^v =
+    - l_l\sin\theta_l \ddot\theta_l
+    - l_l\cos\theta_l \dot\theta_l^2.
+\end{equation}
+
+机体加速度取左右腿转轴加速度平均值：
+\begin{equation}
+    a_b^h = \frac{a_r^h + a_l^h}{2},
+    \qquad
+    a_b^v = \frac{a_r^v + a_l^v}{2}.
+\end{equation}
+
+偏航角加速度由左右轮水平加速度差得到：
+\begin{equation}
+    \ddot\phi =
+    \frac{a_{wr}^h - a_{wl}^h}{2R_w}
+    =
+    \frac{R\left(\ddot\theta_{wr} - \ddot\theta_{wl}\right)}{2R_w}.
+\end{equation}
+
+定义
+\begin{equation}
+    \Gamma =
+    \frac{
+        l_r\cos\theta_r \ddot\theta_r
+        +
+        l_l\cos\theta_l \ddot\theta_l
+    }{2}
+    -
+    \frac{
+        l_r\sin\theta_r \dot\theta_r^2
+        +
+        l_l\sin\theta_l \dot\theta_l^2
+    }{2},
+\end{equation}
+则有
+\begin{equation}
+    \ddot X_b^h =
+    \frac{R\left(\ddot\theta_{wr}+\ddot\theta_{wl}\right)}{2}
+    + \Gamma.
+\end{equation}
+
+由 $\ddot X_b^h$ 与 $\ddot\phi$ 可反解左右轮角加速度：
+\begin{equation}
+    \ddot\theta_{wr}
+    =
+    \frac{\ddot X_b^h + R_w\ddot\phi}{R}
+    -
+    \frac{\Gamma}{R},
+\end{equation}
+\begin{equation}
+    \ddot\theta_{wl}
+    =
+    \frac{\ddot X_b^h - R_w\ddot\phi}{R}
+    -
+    \frac{\Gamma}{R}.
+\end{equation}
+
+通过该变换，轮角加速度不再作为独立广义加速度，而由 $\ddot X_b^h$、$\ddot\phi$、$\ddot\theta_l$ 和 $\ddot\theta_r$ 表示。
+
+\subsection{动力学方程}
+
+基于牛顿--欧拉法，可分别对机体、左右腿、左右轮以及尾巴建立动力学方程。经过消去内部约束力后，可得到六个独立动力学方程：
+\begin{equation}
+    f_i(q,\dot q,\ddot q,u) = 0,
+    \qquad i = 1,2,\cdots,6.
+\end{equation}
+
+其中，六个方程分别对应：
+\begin{align}
+    f_1 &: \text{整体水平方向动量方程}, \\
+    f_2 &: \text{机体俯仰转动方程}, \\
+    f_3 &: \text{右腿转动方程}, \\
+    f_4 &: \text{左腿转动方程}, \\
+    f_5 &: \text{偏航转动方程}, \\
+    f_6 &: \text{尾巴转动方程}.
+\end{align}
+
+下面给出消去内力后的动力学方程显式形式。首先，左右轮的地面水平作用力可由轮子转动方程消去：
+\begin{equation}
+    F_{g\to wl}^h
+    =
+    -\frac{T_{wl\to l}+I_{wl}\ddot\theta_{wl}}{R},
+    \qquad
+    F_{g\to wr}^h
+    =
+    -\frac{T_{wr\to r}+I_{wr}\ddot\theta_{wr}}{R}.
+\end{equation}
+
+尾巴对机体的反作用力由尾巴平动方程给出：
+\begin{equation}
+    F_{t\to b}^h = -m_t a_t^h,
+    \qquad
+    F_{t\to b}^v = -m_t g - m_t a_t^v.
+\end{equation}
+
+因此，整体水平方向动量方程为
+\begin{equation}
+\begin{aligned}
+    f_1
+    ={}&
+    m_b a_b^h
+    + m_l a_l^h
+    + m_r a_r^h
+    + m_t a_t^h
+    + m_{wl} a_{wl}^h
+    + m_{wr} a_{wr}^h  \\
+    &+
+    \frac{
+        T_{wl\to l}
+        + T_{wr\to r}
+        + I_{wl}\ddot\theta_{wl}
+        + I_{wr}\ddot\theta_{wr}
+    }{R}
+    =0 .
+\end{aligned}
+\end{equation}
+
+机体俯仰转动方程为
+\begin{equation}
+\begin{aligned}
+    f_2
+    ={}&
+    I_b\ddot\theta_b
+    - T_{l\to b}
+    - T_{r\to b}
+    - T_{t\to b}  \\
+    &-
+    \left(
+        r_{bp}^h F_{t\to b}^v
+        -
+        r_{bp}^v F_{t\to b}^h
+    \right)
+    -
+    m_b g l_b \sin(\theta_b+\theta_{b0})
+    =0 .
+\end{aligned}
+\end{equation}
+
+代入尾巴反作用力后，上式也可写为
+\begin{equation}
+\begin{aligned}
+    f_2
+    ={}&
+    I_b\ddot\theta_b
+    - T_{l\to b}
+    - T_{r\to b}
+    - T_{t\to b} \\
+    &-
+    \left[
+        r_{bp}^h(-m_t g-m_t a_t^v)
+        -
+        r_{bp}^v(-m_t a_t^h)
+    \right]
+    -
+    m_b g l_b \sin(\theta_b+\theta_{b0})
+    =0 .
+\end{aligned}
+\end{equation}
+
+右腿转动方程为
+\begin{equation}
+\begin{aligned}
+    f_3
+    ={}&
+    I_r\ddot\theta_r
+    - T_{wr\to r}
+    + T_{r\to b}
+    - m_r g l_{r,d}\sin(\theta_r+\theta_{r0}) \\
+    &-
+    m_{wr} a_{wr}^h l_r\cos\theta_r
+    -
+    \frac{
+        (T_{wr\to r}+I_{wr}\ddot\theta_{wr})
+        l_r\cos\theta_r
+    }{R} \\
+    &-
+    \frac{
+        (m_b a_b^v + m_l a_l^v + m_r a_r^v)
+        l_r\sin\theta_r
+    }{2} \\
+    &-
+    \frac{
+        (m_{wr}-m_b-m_l-m_r-m_{wl})
+        g l_r\sin\theta_r
+    }{2}
+    =0 .
+\end{aligned}
+\end{equation}
+
+左腿转动方程为
+\begin{equation}
+\begin{aligned}
+    f_4
+    ={}&
+    I_l\ddot\theta_l
+    - T_{wl\to l}
+    + T_{l\to b}
+    - m_l g l_{l,d}\sin(\theta_l+\theta_{l0}) \\
+    &-
+    m_{wl} a_{wl}^h l_l\cos\theta_l
+    -
+    \frac{
+        (T_{wl\to l}+I_{wl}\ddot\theta_{wl})
+        l_l\cos\theta_l
+    }{R} \\
+    &-
+    \frac{
+        (m_b a_b^v + m_l a_l^v + m_r a_r^v)
+        l_l\sin\theta_l
+    }{2} \\
+    &-
+    \frac{
+        (m_{wl}-m_b-m_l-m_r-m_{wr})
+        g l_l\sin\theta_l
+    }{2}
+    =0 .
+\end{aligned}
+\end{equation}
+
+偏航转动方程为
+\begin{equation}
+    f_5
+    =
+    I_{\mathrm{yaw}}\ddot\phi
+    -
+    \frac{R_w}{R}
+    \left(
+        T_{wl\to l}
+        + I_{wl}\ddot\theta_{wl}
+        - T_{wr\to r}
+        - I_{wr}\ddot\theta_{wr}
+    \right)
+    =0 .
+\end{equation}
+
+尾巴转动方程为
+\begin{equation}
+    f_6
+    =
+    I_t\ddot\theta_t
+    + T_{t \to b}
+    - m_t g l_{t,c}\cos\alpha_t
+    = 0.
+\end{equation}
+
+上述方程仍含有 $\ddot\theta_{wr}$ 和 $\ddot\theta_{wl}$。在后续状态空间建模中，利用轮地运动学约束将其替换为
+\begin{equation}
+    \ddot\theta_{wr}
+    =
+    \frac{\ddot X_b^h + R_w\ddot\phi}{R}
+    -
+    \frac{\Gamma}{R},
+    \qquad
+    \ddot\theta_{wl}
+    =
+    \frac{\ddot X_b^h - R_w\ddot\phi}{R}
+    -
+    \frac{\Gamma}{R}.
+\end{equation}
+经过该代换后，六个方程仅关于广义坐标 $q$、广义速度 $\dot q$、广义加速度 $\ddot q$ 以及控制输入 $u$。
+
+因此，尾巴通过三种方式影响系统动力学：
+
+\begin{enumerate}
+    \item 尾巴质心加速度 $a_t^h$ 参与整体水平方向动量方程；
+    \item 尾巴对机体的反作用力通过安装点力臂影响机体俯仰动力学；
+    \item 尾电机力矩 $T_{t \to b}$ 直接作用于机体和尾巴转动方程。
+\end{enumerate}
+
+\subsection{标准动力学形式}
+
+将六个动力学方程整理为标准矩阵形式：
+\begin{equation}
+    M(q)\ddot q = B(q)u + g(q,\dot q),
+\end{equation}
+其中 $M(q)\in\mathbb{R}^{6\times 6}$ 为惯性矩阵，$B(q)\in\mathbb{R}^{6\times 5}$ 为输入矩阵，$g(q,\dot q)$ 包含重力项、离心项、科氏项以及其他非输入项。
+
+在符号计算中，矩阵 $M(q)$ 可由动力学方程对广义加速度求偏导得到：
+\begin{equation}
+    M_{ij}(q)
+    =
+    \frac{\partial f_i}{\partial \ddot q_j}.
+\end{equation}
+
+输入矩阵由动力学方程对控制输入求偏导得到：
+\begin{equation}
+    B_{ij}(q)
+    =
+    -\frac{\partial f_i}{\partial u_j}.
+\end{equation}
+
+非输入项可写为
+\begin{equation}
+    g(q,\dot q)
+    =
+    -\left[
+        f(q,\dot q,\ddot q,u)
+        - M(q)\ddot q
+        + B(q)u
+    \right].
+\end{equation}
+
+于是非线性系统可表示为
+\begin{equation}
+    \ddot q
+    =
+    M^{-1}(q)
+    \left[
+        B(q)u + g(q,\dot q)
+    \right].
+\end{equation}
+
+\subsection{平衡点求解}
+
+为了进行线性化，首先求取系统静态平衡点。设机体和尾巴目标平衡角为
+\begin{equation}
+    \theta_b^\ast = 0,
+    \qquad
+    \theta_t^\ast = 0.
+\end{equation}
+
+在静态平衡点处，有
+\begin{equation}
+    \dot q^\ast = 0,
+    \qquad
+    \ddot q^\ast = 0.
+\end{equation}
+
+同时设左右腿对机体的静态力矩相同：
+\begin{equation}
+    T_{r \to b}^\ast = T_{l \to b}^\ast = T_{\mathrm{leg}}^\ast,
+\end{equation}
+轮端静态输入为
+\begin{equation}
+    T_{wr \to r}^\ast = 0,
+    \qquad
+    T_{wl \to l}^\ast = 0.
+\end{equation}
+
+尾巴静态力矩为
+\begin{equation}
+    T_{t \to b}^\ast = T_t^\ast.
+\end{equation}
+
+待求未知量为
+\begin{equation}
+    \theta_l^\ast,\quad
+    \theta_r^\ast,\quad
+    T_{\mathrm{leg}}^\ast,\quad
+    T_t^\ast.
+\end{equation}
+
+选取机体转动方程、左右腿转动方程以及尾巴转动方程作为静态平衡方程：
+\begin{equation}
+    f_2^\ast = 0,
+    \qquad
+    f_3^\ast = 0,
+    \qquad
+    f_4^\ast = 0,
+    \qquad
+    f_6^\ast = 0.
+\end{equation}
+
+联立求解可得到平衡点状态
+\begin{equation}
+    x^\ast =
+    \begin{bmatrix}
+        0 &
+        0 &
+        0 &
+        0 &
+        \theta_l^\ast &
+        0 &
+        \theta_r^\ast &
+        0 &
+        \theta_b^\ast &
+        0 &
+        \theta_t^\ast &
+        0
+    \end{bmatrix}^{\mathrm T},
+\end{equation}
+以及平衡输入
+\begin{equation}
+    u^\ast =
+    \begin{bmatrix}
+        T_{\mathrm{leg}}^\ast &
+        T_{\mathrm{leg}}^\ast &
+        0 &
+        0 &
+        T_t^\ast
+    \end{bmatrix}^{\mathrm T}.
+\end{equation}
+
+\subsection{状态空间线性化}
+
+定义一阶状态向量为
+\begin{equation}
+    x =
+    \begin{bmatrix}
+        X_b^h &
+        \dot X_b^h &
+        \phi &
+        \dot\phi &
+        \theta_l &
+        \dot\theta_l &
+        \theta_r &
+        \dot\theta_r &
+        \theta_b &
+        \dot\theta_b &
+        \theta_t &
+        \dot\theta_t
+    \end{bmatrix}^{\mathrm T}.
+\end{equation}
+
+因此系统状态维数为 $12$，输入维数为 $5$。在平衡点附近定义扰动量
+\begin{equation}
+    \delta x = x - x^\ast,
+    \qquad
+    \delta u = u - u^\ast.
+\end{equation}
+
+非线性系统在平衡点处一阶线性化后得到
+\begin{equation}
+    \delta \dot x = A\delta x + B\delta u.
+\end{equation}
+
+状态矩阵 $A$ 的运动学部分满足
+\begin{equation}
+    \dot X_b^h = \dot X_b^h,
+    \quad
+    \dot\phi = \dot\phi,
+    \quad
+    \dot\theta_l = \dot\theta_l,
+    \quad
+    \dot\theta_r = \dot\theta_r,
+    \quad
+    \dot\theta_b = \dot\theta_b,
+    \quad
+    \dot\theta_t = \dot\theta_t.
+\end{equation}
+
+因此 $A$ 中有如下单位映射：
+\begin{equation}
+    A_{1,2}=1,\quad
+    A_{3,4}=1,\quad
+    A_{5,6}=1,\quad
+    A_{7,8}=1,\quad
+    A_{9,10}=1,\quad
+    A_{11,12}=1.
+\end{equation}
+
+动力学部分由
+\begin{equation}
+    \ddot q =
+    M^{-1}(q)
+    \left[
+        B(q)u + g(q,\dot q)
+    \right]
+\end{equation}
+线性化得到。在平衡点处，有
+\begin{equation}
+    M^\ast = M(q^\ast),
+    \qquad
+    B^\ast = B(q^\ast).
+\end{equation}
+
+记
+\begin{equation}
+    G_{\theta_i}
+    =
+    \left.
+    \frac{\partial g}{\partial \theta_i}
+    \right|_{x=x^\ast,u=u^\ast},
+    \qquad
+    \theta_i \in
+    \left\{
+        \theta_l,\theta_r,\theta_b,\theta_t
+    \right\}.
+\end{equation}
+
+则广义加速度对姿态变量的线性化系数为
+\begin{equation}
+    A_{\theta_i}^{\mathrm{dyn}}
+    =
+    \left(M^\ast\right)^{-1}
+    G_{\theta_i}.
+\end{equation}
+
+输入矩阵的动力学部分为
+\begin{equation}
+    B^{\mathrm{dyn}}
+    =
+    \left(M^\ast\right)^{-1}
+    B^\ast.
+\end{equation}
+
+最终，将 $A_{\theta_i}^{\mathrm{dyn}}$ 填入状态矩阵中对应的加速度行：
+\begin{equation}
+    \left[
+    \begin{array}{c}
+        \delta \ddot X_b^h \\
+        \delta \ddot \phi \\
+        \delta \ddot \theta_l \\
+        \delta \ddot \theta_r \\
+        \delta \ddot \theta_b \\
+        \delta \ddot \theta_t
+    \end{array}
+    \right]
+    =
+    \begin{bmatrix}
+        A_{\theta_l}^{\mathrm{dyn}} &
+        A_{\theta_r}^{\mathrm{dyn}} &
+        A_{\theta_b}^{\mathrm{dyn}} &
+        A_{\theta_t}^{\mathrm{dyn}}
+    \end{bmatrix}
+    \begin{bmatrix}
+        \delta\theta_l \\
+        \delta\theta_r \\
+        \delta\theta_b \\
+        \delta\theta_t
+    \end{bmatrix}
+    +
+    B^{\mathrm{dyn}}\delta u.
+\end{equation}
+
+由此得到完整的线性状态空间模型：
+\begin{equation}
+    \delta \dot x
+    =
+    A\delta x + B\delta u.
+\end{equation}
+
+\subsection{LQR 控制律}
+
+基于线性化状态空间模型，设计 LQR 控制器。控制律为
+\begin{equation}
+    \delta u = -K\delta x,
+\end{equation}
+因此实际控制输入为
+\begin{equation}
+    u =
+    u^\ast - K(x-x^\ast).
+\end{equation}
+
+其中 $K$ 为 LQR 增益矩阵，通过求解如下性能指标得到：
+\begin{equation}
+    J =
+    \int_0^\infty
+    \left(
+        \delta x^{\mathrm T}Q\delta x
+        +
+        \delta u^{\mathrm T}R\delta u
+    \right)
+    dt.
+\end{equation}
+
+$Q$ 为状态权重矩阵，$R$ 为输入权重矩阵。对于当前尾巴离地模型，$K$ 的维度为
+\begin{equation}
+    K \in \mathbb{R}^{5\times 12}.
+\end{equation}
+
+\end{document}

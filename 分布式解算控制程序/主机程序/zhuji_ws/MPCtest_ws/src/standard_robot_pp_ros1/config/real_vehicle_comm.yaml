@@ -1,0 +1,24 @@
+standard_robot_pp_ros1:
+  device_name:  /dev/ttyACM0
+  baud_rate: 115200
+  flow_control: none
+  parity: none
+  stop_bits: "1"
+  enable_usb_command_tx: false
+  solved_rc_control_topic: /articulated_vehicle/control_sequence
+  solved_rc_leg_topic: /articulated_control/head_leg_length
+  solved_rc_seq_len: 10
+  solved_rc_default_leg_length: 0.18
+
+fleet_udp_bridge_node:
+  imu_topic: serial/imu
+  fleet_phi_topic: /articulated_control/fleet_phi
+  expected_sequence_topic: /articulated_control/fleet_expected_sequence
+  state_publish_hz: 50.0
+  command_send_hz: 50.0
+  listen_ip: 192.168.3.103
+  listen_port: 5000
+  cmd_target_port: 6000
+  rear_vehicle_ips:
+  - 192.168.3.47
+

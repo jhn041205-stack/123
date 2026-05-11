@@ -1,0 +1,10 @@
+imu_topic: serial/imu
+fleet_phi_topic: /articulated_control/fleet_phi
+expected_sequence_topic: /articulated_control/fleet_expected_sequence
+
+listen_ip: 192.168.3.103
+listen_port: 5000
+cmd_target_port: 6000
+
+rear_vehicle_ips:
+  - 192.168.3.47

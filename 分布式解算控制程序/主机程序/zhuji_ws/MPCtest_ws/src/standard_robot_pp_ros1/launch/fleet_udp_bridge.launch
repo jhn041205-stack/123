@@ -1,0 +1,9 @@
+<launch>
+  <arg name="config_file" default="$(find standard_robot_pp_ros1)/config/real_vehicle_comm.yaml" />
+  <rosparam command="load" file="$(arg config_file)" />
+
+  <node pkg="standard_robot_pp_ros1"
+        type="fleet_udp_bridge_node.py"
+        name="fleet_udp_bridge_node"
+        output="screen" />
+</launch>

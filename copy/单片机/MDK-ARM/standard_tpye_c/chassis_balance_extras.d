@@ -1,0 +1,15 @@
+standard_tpye_c\chassis_balance_extras.o: ..\application\chassis\chassis_balance_extras.c
+standard_tpye_c\chassis_balance_extras.o: ..\application\chassis\chassis_balance_extras.h
+standard_tpye_c\chassis_balance_extras.o: ../application/robot_param.h
+standard_tpye_c\chassis_balance_extras.o: ../application/typedef/robot_typedef.h
+standard_tpye_c\chassis_balance_extras.o: ../application/typedef/struct_typedef.h
+standard_tpye_c\chassis_balance_extras.o: ../application/robot_param_balanced_infantry.h
+standard_tpye_c\chassis_balance_extras.o: D:\learn_apps\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+standard_tpye_c\chassis_balance_extras.o: ../components/algorithm/Include/arm_math.h
+standard_tpye_c\chassis_balance_extras.o: ../Drivers/CMSIS/Include/core_cm4.h
+standard_tpye_c\chassis_balance_extras.o: D:\learn_apps\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+standard_tpye_c\chassis_balance_extras.o: ../Drivers/CMSIS/Include/cmsis_version.h
+standard_tpye_c\chassis_balance_extras.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+standard_tpye_c\chassis_balance_extras.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+standard_tpye_c\chassis_balance_extras.o: D:\learn_apps\Keil\ARM\ARMCC\Bin\..\include\string.h
+standard_tpye_c\chassis_balance_extras.o: D:\learn_apps\Keil\ARM\ARMCC\Bin\..\include\math.h

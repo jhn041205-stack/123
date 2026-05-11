@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="standard_robot_pp_ros1"
+        type="standard_robot_pp_ros1_node"
+        name="standard_robot_pp_ros1"
+        output="screen">
+    <rosparam command="load" file="$(find standard_robot_pp_ros1)/config/standard_robot_pp_ros1.yaml" />
+  </node>
+</launch>
